@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.chroma/
+uploads/
+
+# Node / Expo
+node_modules/
+mobile/node_modules/
+mobile/.expo/
+mobile/dist/
+mobile/.cache/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Logs
+*.log
+/tmp/
+
+# Build artifacts
+build/
+dist/
+coverage/

@@ -1,0 +1,22 @@
+openbb
+fastapi
+uvicorn[standard]
+python-dotenv
+pandas
+numpy
+pydantic
+httpx
+tqdm
+chromadb
+openai
+pyportfolioopt
+streamlit
+requests
+
+# Optional extras (uncomment to include)
+# py_vollib
+# mibian
+# finnhub-python
+# alpaca-trade-api
+# polygon
+
