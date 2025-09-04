@@ -1,0 +1,12 @@
+[submodule "Desktop/LEO/vendor/experimental-openbb-platform-agent"]
+	path = Desktop/LEO/vendor/experimental-openbb-platform-agent
+	url = https://github.com/Aumi4O/experimental-openbb-platform-agent
+[submodule "Desktop/LEO/vendor/FinGPT"]
+	path = Desktop/LEO/vendor/FinGPT
+	url = https://github.com/Aumi4O/FinGPT
+[submodule "Desktop/LEO/vendor/FinRobot"]
+	path = Desktop/LEO/vendor/FinRobot
+	url = https://github.com/Aumi4O/FinRobot
+[submodule "Desktop/LEO/vendor/investbrain"]
+	path = Desktop/LEO/vendor/investbrain
+	url = https://github.com/Aumi4O/investbrain
