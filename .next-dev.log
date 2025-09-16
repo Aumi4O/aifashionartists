@@ -1,0 +1,23 @@
+
+> olga-ai@0.1.0 dev
+> next dev
+
+node:internal/modules/package_json_reader:93
+        throw error;
+        ^
+
+SyntaxError: Error parsing /Users/olgavasilevsky/Desktop/AI_artist/olga-ai/node_modules/next/dist/compiled/commander/package.json: Unexpected end of JSON input
+    at parse (<anonymous>)
+    at read (node:internal/modules/package_json_reader:80:16)
+    at readPackage (node:internal/modules/package_json_reader:141:10)
+    at tryPackage (node:internal/modules/cjs/loader:431:15)
+    at Module._findPath (node:internal/modules/cjs/loader:716:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1131:27)
+    at /Users/olgavasilevsky/Desktop/AI_artist/olga-ai/node_modules/next/dist/server/require-hook.js:57:36
+    at Module._load (node:internal/modules/cjs/loader:986:27)
+    at Module.require (node:internal/modules/cjs/loader:1233:19)
+    at mod.require (/Users/olgavasilevsky/Desktop/AI_artist/olga-ai/node_modules/next/dist/server/require-hook.js:68:28) {
+  path: '/Users/olgavasilevsky/Desktop/AI_artist/olga-ai/node_modules/next/dist/compiled/commander/package.json'
+}
+
+Node.js v20.16.0
