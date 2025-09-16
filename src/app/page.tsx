@@ -105,9 +105,9 @@ export default function Home() {
           items={arranged.map((it) => ({ ...it, _key: `${it.collectionId}-${it.id}` }))}
           columnGutter={12}
           columnWidth={320}
-          render={(props: any) => {
-            const data = props.data;
-            return <MasonryCard key={(data as any)._key} {...props} />;
+          render={(props: { data: MediaItem } & Record<string, unknown>) => {
+            const data = props.data as MediaItem & { _key?: string };
+            return <MasonryCard key={data._key ?? `${data.collectionId}-${data.id}` } {...(props as any)} />;
           }}
         />
       </section>

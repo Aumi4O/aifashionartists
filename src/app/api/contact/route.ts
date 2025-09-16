@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
+export const runtime = "edge";
 
 export async function POST(req: Request) {
   try {
@@ -12,23 +12,30 @@ export async function POST(req: Request) {
     if (!apiKey) {
       return NextResponse.json({ ok: false, error: "Server email not configured" }, { status: 500 });
     }
-
-    const resend = new Resend(apiKey);
     const from = process.env.RESEND_FROM || "onboarding@resend.dev";
-    const result = await resend.emails.send({
-      from,
-      to: ["olga@aifashionartists.com"],
-      reply_to: email,
-      subject: `New inquiry from ${name}`,
-      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${apiKey}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: ["olga@aifashionartists.com"],
+        reply_to: email,
+        subject: `New inquiry from ${name}`,
+        text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      }),
     });
 
-    if ((result as any)?.error) {
-      return NextResponse.json({ ok: false, error: (result as any).error.message }, { status: 500 });
+    const data = (await response.json()) as { id?: string; error?: { message?: string } };
+    if (!response.ok) {
+      return NextResponse.json({ ok: false, error: data?.error?.message || response.statusText }, { status: 500 });
     }
-    return NextResponse.json({ ok: true });
-  } catch (e: any) {
-    return NextResponse.json({ ok: false, error: e?.message || "Unknown error" }, { status: 500 });
+    return NextResponse.json({ ok: true, id: data.id ?? null });
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : "Unknown error";
+    return NextResponse.json({ ok: false, error: msg }, { status: 500 });
   }
 }
 
