@@ -12,6 +12,10 @@ const nextConfig: NextConfig = {
     // Allow build to succeed even if there are type errors (Cloudflare will still run the app)
     ignoreBuildErrors: true,
   },
+  images: {
+    // Cloudflare Pages serves static assets well; disable Next's image optimizer to avoid 404s
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
