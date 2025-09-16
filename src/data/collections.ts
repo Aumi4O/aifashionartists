@@ -398,86 +398,86 @@ export const collections: Collection[] = [
     ]
   },
   {
-    "id": "korean photography wall art ",
-    "title": "korean photography wall art ",
+    "id": "korean-photography-wall-art",
+    "title": "Korean Photography",
     "items": [
       {
         "id": "olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_5f0a23d4-6774-405b-a494-a86e4bfba45d_1.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_5f0a23d4-6774-405b-a494-a86e4bfba45d_1.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_5f0a23d4-6774-405b-a494-a86e4bfba45d_1.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas ethereal Korean model in sapphire-blue hanbok with pa 5f0a23d4-6774-405b-a494-a86e4bfba45d 1"
       },
       {
         "id": "olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_dd8020ca-54be-4717-8dc7-f0506de7e33f_0.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_dd8020ca-54be-4717-8dc7-f0506de7e33f_0.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_dd8020ca-54be-4717-8dc7-f0506de7e33f_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas ethereal Korean model in sapphire-blue hanbok with pa dd8020ca-54be-4717-8dc7-f0506de7e33f 0"
       },
       {
         "id": "olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas ethereal Korean model in sapphire-blue hanbok with pa f41b2022-06ef-4a31-9de9-efe91822a091 0"
       },
       {
         "id": "olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_3.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_3.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_3.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas ethereal Korean model in sapphire-blue hanbok with pa f41b2022-06ef-4a31-9de9-efe91822a091 3"
       },
       {
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 02d1a57d-9a59-494b-a8b6-f83c1edefefb 0"
       },
       {
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 2abb8ead-b452-476a-a997-6911c5d9c288 2"
       },
       {
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 0"
       },
       {
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 1"
       },
       {
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
-        "collectionId": "korean photography wall art ",
+        "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
+        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 3"

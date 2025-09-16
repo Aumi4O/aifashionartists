@@ -37,7 +37,7 @@ export default function Home() {
 
   const aliasMap: Record<string, string> = {
     // Map friendly chip labels to concrete collection ids/titles
-    "korean photography": "korean photography wall art ",
+    "korean photography": "korean-photography-wall-art",
   };
 
   const filtered = useMemo(() => {
