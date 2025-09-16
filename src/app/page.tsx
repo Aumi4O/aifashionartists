@@ -19,9 +19,12 @@ export default function Home() {
     const getFileName = (p: string) => p.split("/").pop() || p;
     return collections.flatMap(c =>
       c.items.map((it) => {
-        if (it.type === "video" && videoBase && it.src.startsWith("/visuals/videos/")) {
+        if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
           const file = getFileName(it.src);
-          return { ...it, src: `${videoBase}/${file}` } as MediaItem;
+          if (videoBase) {
+            return { ...it, src: `${videoBase}/${file}` } as MediaItem;
+          }
+          return { ...it, src: `/videos/${file}` } as MediaItem;
         }
         return it;
       })

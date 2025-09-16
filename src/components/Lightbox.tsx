@@ -64,7 +64,7 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
             ) : (
               <Image
                 src={item.src}
-                alt={item.title ?? "Artwork"}
+                alt={"Artwork"}
                 width={item.w || 1600}
                 height={item.h || 1200}
                 className="h-auto w-auto max-w-[95vw] max-h-[90vh] object-contain bg-black select-none"

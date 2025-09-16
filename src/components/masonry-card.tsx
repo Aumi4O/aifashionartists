@@ -40,7 +40,7 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
       ) : (
         <Image
           src={data.src}
-          alt={data.title ?? "Artwork"}
+          alt={"Artwork"}
           width={data.w} height={data.h}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className="w-full h-auto object-cover select-none"
