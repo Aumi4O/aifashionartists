@@ -75,15 +75,7 @@ export default function About() {
         </p>
       </section>
 
-      <section id="pricing" aria-labelledby="pricing-h2">
-        <h2 id="pricing-h2">Engagement Options</h2>
-        <p>
-          Editorial Capsule: 8–12 hero images plus 12–24 variations for web and social, from $4,800. Launch Kit:
-          campaign key visual(s) plus a paid‑social suite of 15–30 variants and e‑commerce alternates, from $7,500.
-          Always‑On Creative retainer: a monthly stream of on‑brand images and motion for drops, ads, and site refresh,
-          from $5,000 per month. Minimum engagement $3,000; custom quotes for seasonal collections and large rollouts.
-        </p>
-      </section>
+      {/* Pricing section intentionally removed before publish */}
 
       <section id="faqs" aria-labelledby="faqs-h2">
         <h2 id="faqs-h2">FAQs</h2>
