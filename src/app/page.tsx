@@ -21,10 +21,8 @@ export default function Home() {
       c.items.map((it) => {
         if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
           const file = getFileName(it.src);
-          if (videoBase) {
-            return { ...it, src: `${videoBase}/${file}` } as MediaItem;
-          }
-          return { ...it, src: `/videos/${file}` } as MediaItem;
+          // Prefer external base when provided; otherwise keep original path under /visuals/videos
+          return videoBase ? ({ ...it, src: `${videoBase}/${file}` } as MediaItem) : it;
         }
         return it;
       })
