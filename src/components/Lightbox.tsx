@@ -56,10 +56,12 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 poster={item.poster}
                 controls
                 autoPlay
+                muted
                 playsInline
                 controlsList="nodownload noplaybackrate"
                 disablePictureInPicture
                 onContextMenu={(e) => e.preventDefault()}
+                onError={(e) => console.warn('Lightbox video error:', item.src)}
               />
             ) : (
               <Image

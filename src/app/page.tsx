@@ -6,6 +6,7 @@ import FilterBar from "@/components/FilterBar";
 import { collections, type MediaItem } from "@/data/collections";
 import { MasonryCard } from "@/components/masonry-card";
 import Lightbox from "@/components/Lightbox";
+import { VideoDebug } from "@/components/VideoDebug";
 
 // masonic relies on ResizeObserver; disable SSR to avoid server-side reference errors
 const Masonry = dynamic(() => import("masonic").then(m => m.Masonry), { ssr: false }) as any;
@@ -114,6 +115,7 @@ export default function Home() {
       </section>
 
       <Lightbox item={active} onClose={() => setActive(null)} />
+      <VideoDebug />
     </main>
   );
 }
