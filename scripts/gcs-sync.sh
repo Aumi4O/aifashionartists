@@ -27,3 +27,5 @@ gsutil -m -h "Cache-Control:public,max-age=31536000,immutable" \
 echo "Done. Example URL: https://storage.googleapis.com/$(echo "$GCS_URI" | sed -E 's@^gs://([^/]+)/?.*$@\1@')/$(echo "$GCS_URI" | sed -E 's@^gs://[^/]+/@@')/yourfile.mp4"
 
 
+
+
