@@ -30,6 +30,7 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
           src={data.src}
           poster={data.poster}
           muted playsInline preload="metadata"
+          crossOrigin="anonymous"
           onMouseEnter={(e)=> e.currentTarget.play()}
           onMouseLeave={(e)=> { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
           controls={false}

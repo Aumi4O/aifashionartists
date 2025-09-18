@@ -56,7 +56,9 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 poster={item.poster}
                 controls
                 autoPlay
+                muted
                 playsInline
+                crossOrigin="anonymous"
                 controlsList="nodownload noplaybackrate"
                 disablePictureInPicture
                 onContextMenu={(e) => e.preventDefault()}
