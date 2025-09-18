@@ -29,7 +29,7 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
           className="w-full h-auto"
           src={data.src}
           poster={data.poster}
-          muted playsInline preload="metadata"
+          muted playsInline webkit-playsinline preload="metadata"
           onMouseEnter={(e)=> e.currentTarget.play()}
           onMouseLeave={(e)=> { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
           controls={false}

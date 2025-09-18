@@ -58,6 +58,7 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 autoPlay
                 muted
                 playsInline
+                webkit-playsinline
                 controlsList="nodownload noplaybackrate"
                 disablePictureInPicture
                 onContextMenu={(e) => e.preventDefault()}
