@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import type { MediaItem } from "@/data/collections";
@@ -10,6 +10,7 @@ type LightboxProps = {
 };
 
 export default function Lightbox({ item, onClose }: LightboxProps) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
   useEffect(() => {
     if (!item) return;
     const onKey = (e: KeyboardEvent) => {
@@ -23,6 +24,22 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
       document.body.style.overflow = originalOverflow;
     };
   }, [item, onClose]);
+
+  // On iOS, trigger play() after user gesture that opened the lightbox
+  useEffect(() => {
+    if (!item || item.type !== "video") return;
+    const el = videoRef.current;
+    if (!el) return;
+    const tryPlay = () => {
+      const p = el.play();
+      if (p && typeof (p as any).catch === "function") (p as any).catch(() => {});
+    };
+    const onCanPlay = () => tryPlay();
+    el.addEventListener("canplay", onCanPlay);
+    // attempt immediately too
+    tryPlay();
+    return () => el.removeEventListener("canplay", onCanPlay);
+  }, [item]);
 
   return (
     <AnimatePresence>
@@ -51,6 +68,7 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
           >
             {item.type === "video" ? (
               <video
+                ref={videoRef}
                 className="max-w-[95vw] max-h-[90vh] object-contain bg-black"
                 src={item.src}
                 poster={item.poster}
@@ -59,6 +77,7 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 muted
                 playsInline
                 webkit-playsinline
+                preload="auto"
                 controlsList="nodownload noplaybackrate"
                 disablePictureInPicture
                 onContextMenu={(e) => e.preventDefault()}
