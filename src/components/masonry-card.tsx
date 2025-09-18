@@ -26,7 +26,7 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
     >
       {isVideo ? (
         <video
-          className="w-full h-auto aspect-video"
+          className="w-full h-auto"
           src={data.src}
           poster={data.poster}
           muted playsInline preload="metadata"
@@ -36,7 +36,6 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
           controlsList="nodownload noplaybackrate"
           disablePictureInPicture
           onContextMenu={(e) => e.preventDefault()}
-          onError={(e) => console.warn('Video load error:', data.src)}
         />
       ) : (
         <Image
