@@ -1,0 +1,1281 @@
+{
+  "sections": {
+    "section_banner_image_gB6GHp": {
+      "type": "section-banner-image",
+      "blocks": {
+        "subheading_6Fftma": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>Explore Iconic Brands<\/p>",
+            "size": 100
+          }
+        },
+        "heading_GK84yX": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Welcome to<\/p><p>  <em> Aumi4<\/em><\/p>",
+            "size": 165,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": ""
+          }
+        },
+        "text_RXm4xT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>World-Class Brands, Styled by AI at Aumi4.<\/p>",
+            "size": 100
+          }
+        },
+        "button_dnABjG": {
+          "type": "button",
+          "settings": {
+            "stacked_button": false,
+            "button_1_text": "Shop All",
+            "button_1_link": "shopify:\/\/collections\/new-products",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--large",
+            "button_2_text": "Ai Fashion Hub",
+            "button_2_link": "shopify:\/\/pages\/ai-in-fashion",
+            "button_2_color": "btn--white",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--large"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6Fftma",
+        "heading_GK84yX",
+        "text_RXm4xT",
+        "button_dnABjG"
+      ],
+      "settings": {
+        "height": "original-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "image": "shopify:\/\/shop_images\/olgavas_Im_imagine_Macro_fashion_still_Penn_calm_169_head-to-_2b78a958-9f76-4487-9a08-db8d349edaaf_2.png",
+        "overlay_opacity": 10,
+        "transition": "zoom-out",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "text_width": "narrow",
+        "text_position": "left",
+        "text_alignment": "text-left",
+        "text_color": "text-light",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-slideshow-0": {
+      "type": "section-slideshow",
+      "blocks": {
+        "section-slideshow-0-block-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0_1_new.jpg",
+            "overlay_opacity": 0,
+            "text_width": "narrow",
+            "text_position": "left",
+            "text_alignment": "text-center",
+            "text_color": "text-light",
+            "subheading": "Explore Iconic Brands",
+            "title": "<p>Welcome to  <em> Aumi4<\/em><\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "World-Class Brands, Styled by AI at Aumi4.",
+            "stacked_button": true,
+            "button_1_text": "Shop All",
+            "button_1_link": "shopify:\/\/collections\/new-products",
+            "button_1_color": "btn--primary",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--large",
+            "button_2_text": "Learn More",
+            "button_2_link": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--large",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "section-slideshow-0-block-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/0_3_ov_5.jpg",
+            "overlay_opacity": 10,
+            "text_width": "wide",
+            "text_position": "center",
+            "text_alignment": "text-center",
+            "text_color": "text-light",
+            "subheading": "Revealing Limited-Time Offers",
+            "title": "<p>Welcome to <em> Aumi 4<\/em><\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "text": "Ai Luxury by  Aumi4",
+            "stacked_button": false,
+            "button_1_text": "Shop All",
+            "button_1_link": "shopify:\/\/collections\/new-products",
+            "button_1_color": "btn--primary",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--large",
+            "button_2_text": "Ai Inspiration",
+            "button_2_link": "",
+            "button_2_color": "btn--secondary",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--large",
+            "video_text": "",
+            "video_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "section-slideshow-0-block-1",
+        "section-slideshow-0-block-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "slide_height": "seven-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_slide_height": "seven-fifty-height-mobile",
+        "show_nav_dots": true,
+        "show_nav_arrows": false,
+        "show_arrow_down": false,
+        "autoplay": true,
+        "duration": 4,
+        "transition": "zoom-out",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": true,
+        "increase_border_radius": true,
+        "heading_size": 160
+      }
+    },
+    "section-countdown-0": {
+      "type": "section-countdown",
+      "blocks": {
+        "section-countdown-0-block-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>Countdown is on<\/p>",
+            "size": 75
+          }
+        },
+        "section-countdown-0-block-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Shop Before It Ends<\/p>",
+            "size": 120,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
+          }
+        },
+        "section-countdown-0-block-2": {
+          "type": "timer",
+          "settings": {
+            "end_date": "2025-08-30",
+            "end_time": "11:59",
+            "period": "am",
+            "end_message": "",
+            "size": 115,
+            "bg_color": "",
+            "bg_opacity": 100,
+            "text_color": "text-dark"
+          }
+        },
+        "section-countdown-0-block-3": {
+          "type": "button",
+          "settings": {
+            "button_1_text": "Shop the sale",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--text",
+            "button_1_size": "btn--large",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "section-countdown-0-block-0",
+        "section-countdown-0-block-1",
+        "section-countdown-0-block-2",
+        "section-countdown-0-block-3"
+      ],
+      "settings": {
+        "layout_style": "inline",
+        "text_alignment": "center",
+        "height": "150",
+        "enable_mobile_height": true,
+        "mobile_height": "300",
+        "overlay_opacity": 10,
+        "enable_zoom_animation": true,
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "text_color": "text-dark",
+        "text_width": "normal",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "section-text-0": {
+      "type": "section-text",
+      "blocks": {
+        "section-text-0-block-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>Find Your Perfect Style<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "section-text-0-block-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>Shop Trending Styles<\/p>",
+            "size": 120,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#000000",
+            "highlight_text_color": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "section-text-0-block-0",
+        "section-text-0-block-1"
+      ],
+      "settings": {
+        "text_position": "center",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--narrow",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "section-grid-0": {
+      "type": "section-grid",
+      "blocks": {
+        "section-grid-0-block-0": {
+          "type": "image",
+          "settings": {
+            "width": "25",
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Portrait_study_Penn_x_Miu_Miu_Indigenous_Nort_1bdbb412-ad2d-4a2f-be06-a4ed103e0697_1.png",
+            "overlay_opacity": 10,
+            "text_position": "bottom-left",
+            "subheading": "",
+            "title": "Women",
+            "text": "Elegance Redefined",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/women",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "section-grid-0-block-2": {
+          "type": "image",
+          "settings": {
+            "width": "25",
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Platinum-print_close-crop_Prada_Summer_2025_n_2_c269d198-ba50-450b-816d-076ff03098aa.png",
+            "overlay_opacity": 10,
+            "text_position": "bottom-left",
+            "subheading": "",
+            "title": "Sale",
+            "text": "Exclusive Offers",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/sale",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "section-grid-0-block-1": {
+          "type": "image",
+          "settings": {
+            "width": "25",
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Macro_portrait_chin-to-sternum_Dior_silk_twil_b2b73c91-dbc4-46ee-91aa-1894387f0e3b_3.png",
+            "overlay_opacity": 10,
+            "text_position": "bottom-left",
+            "subheading": "",
+            "title": "Men",
+            "text": "Refined Power",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/men-1",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "section-grid-0-block-3": {
+          "type": "image",
+          "settings": {
+            "width": "25",
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Close-crop_beauty_headshot_Irving_Penn_platin_5a70dc9c-b1e0-4226-a332-a8b8def68927_3.png",
+            "overlay_opacity": 10,
+            "text_position": "bottom-left",
+            "subheading": "",
+            "title": "New",
+            "text": "Rewrite Luxury",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/new-products",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "section-grid-0-block-0",
+        "section-grid-0-block-2",
+        "section-grid-0-block-1",
+        "section-grid-0-block-3"
+      ],
+      "settings": {
+        "desktop_height": "five-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "three-fifty-height-mobile",
+        "heading_size": 110,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "section_bg_color": "",
+        "gradient": "",
+        "enable_slider_mobile": false,
+        "columns_mobile": "2",
+        "overlay_text": false,
+        "width": "wrapper--full-padded",
+        "add_gutter": true,
+        "padding_top": 20,
+        "padding_bottom": 50
+      }
+    },
+    "section-marquee-0": {
+      "type": "section-marquee",
+      "blocks": {
+        "section-marquee-0-block-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>SolanaPay Now Available!<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-0-block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>NEW! Pay with Crypto ! - <a href=\"\/collections\/new-products\" title=\"New Products\">Shop now<\/a><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "section-marquee-0-block-1",
+        "section-marquee-0-block-2"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-promotion-row-0": {
+      "type": "section-promotion-row",
+      "blocks": {
+        "section-promotion-row-0-block-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_7c269375-9da7-4a46-8840-c4debac87af5_1.png",
+            "subheading": "<p>Stack the Savings <\/p>",
+            "subheading_size": 75,
+            "heading": "<p>20% OFF +<\/p>",
+            "heading_highlight_type": "italics",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#0b0b0b",
+            "heading_size": 295,
+            "description": "Every item is already on offer, but now you get even more",
+            "description_size": 100,
+            "disclaimer": "*additional 5% applies to select items only",
+            "disclaimer_size": 75,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "bg_color": "",
+            "gradient_background": "",
+            "text_color": "#d02e2e",
+            "overlay_opacity": 10
+          }
+        },
+        "section-promotion-row-0-block-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_86c324da-d035-4644-9507-2c504b874aa3_3.png",
+            "subheading": "<p>For a limited time<\/p>",
+            "subheading_size": 75,
+            "heading": "<p><em>FREE SHIPPING<\/em><\/p>",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#ffffff",
+            "highlight_text_color": "#ffffff",
+            "heading_size": 160,
+            "description": "With every purchase over $200",
+            "description_size": 80,
+            "disclaimer": "",
+            "disclaimer_size": 75,
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small",
+            "bg_color": "",
+            "gradient_background": "",
+            "text_color": "#ffffff",
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "section-promotion-row-0-block-1",
+        "section-promotion-row-0-block-2"
+      ],
+      "settings": {
+        "layout": "1",
+        "count_up_enabled": true,
+        "count_up_duration": 100,
+        "height": "400",
+        "enable_mobile_height": true,
+        "mobile_height": "400",
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "width": "wrapper--full-padded",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "section-marquee-1": {
+      "type": "section-marquee",
+      "blocks": {
+        "section-marquee-1-block-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New collections just released - <a href=\"\/collections\" title=\"All collections\">Shop now<\/a><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-1-block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Use code <strong>TENOFF<\/strong> for 10% off first purchase<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "section-marquee-1-block-1",
+        "section-marquee-1-block-2"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 10,
+        "marquee_speed": 100,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 120,
+        "letter_spacing": 0,
+        "message_spacing": 10,
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-collection-0": {
+      "type": "section-collection",
+      "blocks": {
+        "section-collection-0-block-0": {
+          "type": "promo",
+          "disabled": true,
+          "settings": {
+            "position": 1,
+            "width": "half",
+            "title": "<p>Promotion title<\/p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_text_color": "#000000",
+            "heading_size": 100,
+            "content": "Advertise a promotion or a sale",
+            "text_size": 100,
+            "text_color": "text-dark",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f7f7f7",
+            "button_text": "",
+            "button_link": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "section-collection-0-block-0"
+      ],
+      "settings": {
+        "collection": "new-products",
+        "products_layout": "carousel",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Exclusive Designer New Arrivals<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "heading_size": 175,
+        "text": "<p>Unveil the Season’s Must-Haves—Shop New Arrivals From 600 Luxury Brands.<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "Shop now",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--large",
+        "bg_color": "",
+        "enable_slider_mobile": false,
+        "width": "wrapper--full-padded",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "section-sticky-image-cards-0": {
+      "type": "section-sticky-image-cards",
+      "blocks": {
+        "section-sticky-image-cards-0-block-0": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_0.png",
+            "subheading": "Violet Uprising",
+            "title": "<p><em>Defy the season in algorithmic couture.<\/em><\/p>",
+            "heading_size": 160,
+            "truncate_text": true,
+            "heading_length": 15,
+            "button_text": "Shop now",
+            "button_link": "shopify:\/\/collections\/women",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "section-sticky-image-cards-0-block-1": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_2.png",
+            "subheading": "Silk of Silence",
+            "title": "<p><em>Where quiet luxury meets machine muse.<\/em><\/p>",
+            "heading_size": 160,
+            "truncate_text": true,
+            "heading_length": 15,
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/women",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        },
+        "section-sticky-image-cards-0-block-2": {
+          "type": "card",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_3.png",
+            "subheading": "Whispers in Ultraviolet",
+            "title": "<p><em>Soft power, woven by neural threads.<\/em><\/p>",
+            "heading_size": 160,
+            "truncate_text": true,
+            "heading_length": 15,
+            "button_text": "Shop NOW",
+            "button_link": "shopify:\/\/collections\/women",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "section-sticky-image-cards-0-block-0",
+        "section-sticky-image-cards-0-block-1",
+        "section-sticky-image-cards-0-block-2"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "image_position": "",
+        "aspect_ratio_desktop": 1.5,
+        "aspect_ratio_mobile": 1,
+        "layout_mobile": "sticky",
+        "text_color": "text-dark",
+        "bg_color": "#f4f3f1",
+        "width": "wrapper--full-padded",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section-testimonials-with-images-0": {
+      "type": "section-testimonials-with-images",
+      "blocks": {
+        "section-testimonials-with-images-0-block-0": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Love it!",
+            "text_size": 125,
+            "text": "<p>The products not only look stunning but feel amazing. It’s rare to find such a perfect balance.<\/p>",
+            "customer_name": "Maria D.",
+            "subheading": "<p>Happy customer<\/p>"
+          }
+        },
+        "section-testimonials-with-images-0-block-1": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/7W2B0R86PTJ_R_VALE-AKV.a_60e6914a-7410-4fd9-9660-f130f7938a79.jpg",
+            "aspect_ratio": 1,
+            "heading": "This bag is a perfect mix of edgy and elegant!",
+            "text_size": 125,
+            "customer_name": "Emily R",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-2": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "A True Statement Piece!",
+            "text_size": 125,
+            "text": "<p>Every detail of their products exudes luxury and sophistication. I’m in awe of the craftsmanship and design.<\/p>",
+            "customer_name": "Alex K.",
+            "subheading": "<p>12 days ago<\/p>"
+          }
+        },
+        "section-testimonials-with-images-0-block-3": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/190103971---fw25---toryburchpre---169568600_cfca7972-5a3f-43b6-9128-6133f84f6f85.jpg",
+            "aspect_ratio": 1,
+            "heading": "Bag is a masterpiece—elegant, unique, and a true conversation starter!",
+            "text_size": 125,
+            "customer_name": "Sophia M.",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-4": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Exceptional Service and Quality!",
+            "text_size": 125,
+            "text": "<p>From start to finish, the experience was flawless. Their attention to detail is unmatched.<\/p>",
+            "customer_name": "David L.",
+            "subheading": "<p>Verified customer<\/p>"
+          }
+        },
+        "section-testimonials-with-images-0-block-5": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/553680WIEF1_Q_ALEXQ-9086.b_b069c656-8a83-4336-9bf6-f688498a3608.jpg",
+            "aspect_ratio": 1,
+            "heading": "I can wear them all day and still turn heads!",
+            "text_size": 125,
+            "customer_name": "Liam J",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        },
+        "section-testimonials-with-images-0-block-6": {
+          "type": "testimonial",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": true,
+            "heading": "Elevating Everyday Fashion!",
+            "text_size": 125,
+            "text": "<p>These products make me feel unique and confident every time I step out. A game-changer for my wardrobe!<\/p>",
+            "customer_name": "Chloe S.",
+            "subheading": "<p>Loyal Customer<\/p>"
+          }
+        },
+        "section-testimonials-with-images-0-block-7": {
+          "type": "image",
+          "settings": {
+            "star_rating": 5,
+            "enable_border": false,
+            "image": "shopify:\/\/shop_images\/07811081CLE_Q_FERRA-FR.b.jpg",
+            "aspect_ratio": 1,
+            "heading": "Italian Craftsmanship at Its Finest!",
+            "text_size": 125,
+            "customer_name": "Isabella R",
+            "block_color": "",
+            "text_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "section-testimonials-with-images-0-block-0",
+        "section-testimonials-with-images-0-block-1",
+        "section-testimonials-with-images-0-block-2",
+        "section-testimonials-with-images-0-block-3",
+        "section-testimonials-with-images-0-block-4",
+        "section-testimonials-with-images-0-block-5",
+        "section-testimonials-with-images-0-block-6",
+        "section-testimonials-with-images-0-block-7"
+      ],
+      "settings": {
+        "subheading": "",
+        "subheading_size": 100,
+        "title": "We love customer reviews!",
+        "heading_size": 140,
+        "text_alignment": "text-left",
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "testimonial_block_color": "#ffffff",
+        "star_color": "",
+        "testimonial_text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-overlapping-images-0": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "right",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 115,
+        "image_1": "shopify:\/\/shop_images\/190099784---fw25---brunellocucinellipre---m19251500pcot75_3_p_8d214938-5652-4ac1-8432-e1bd3362e380.jpg",
+        "image_link_1": "",
+        "image_2": "shopify:\/\/shop_images\/190099699---fw25---brunellocucinellipre---mpg731309pc3592_4_p_256c096e-00c4-49e9-b625-7b5c70b651c2.jpg",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p><em> Where<\/em> Fashion Dreams Come True<\/p>",
+        "heading_highlight_type": "circle-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "#000000",
+        "description": "<p><em>Experience a curated world of style from the globe’s most coveted labels.<\/em><\/p>",
+        "heading_size": 110,
+        "button_text": "Shop Brunello Cucinelli",
+        "button_link": "shopify:\/\/collections\/brunello-cucinelli",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "video_text": "",
+        "video_link": "",
+        "bg_color": "",
+        "gradient": "linear-gradient(180deg, rgba(244, 243, 241, 1), rgba(255, 255, 255, 1) 100%)",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 100
+      }
+    },
+    "section-marquee-2": {
+      "type": "section-marquee",
+      "blocks": {
+        "section-marquee-2-block-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New collections just released - <a href=\"\/collections\/new-products\" title=\"New Products\">Shop now<\/a><\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-43.png",
+            "link": "",
+            "image_width": 160
+          }
+        },
+        "section-marquee-2-block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe for 5% off first purchase<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 25,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "section-marquee-2-block-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled-41.png",
+            "link": "",
+            "image_width": 160
+          }
+        }
+      },
+      "block_order": [
+        "section-marquee-2-block-0",
+        "section-marquee-2-block-1",
+        "section-marquee-2-block-2",
+        "section-marquee-2-block-3"
+      ],
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "padding": 50,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 200,
+        "letter_spacing": 0,
+        "message_spacing": 20,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#545454",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-grid-1": {
+      "type": "section-grid",
+      "blocks": {
+        "section-grid-1-block-0": {
+          "type": "image",
+          "settings": {
+            "width": "50",
+            "image": "shopify:\/\/shop_images\/Untitled-51.png",
+            "overlay_opacity": 10,
+            "text_position": "bottom-left",
+            "subheading": "Luxury Fashion Destination",
+            "title": "Best Sellers",
+            "text": "Discover What’s Trending",
+            "button_1_text": "Shop Now",
+            "button_1_link": "shopify:\/\/collections\/best-selling-products",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        },
+        "section-grid-1-block-1": {
+          "type": "image",
+          "settings": {
+            "width": "50",
+            "image": "shopify:\/\/shop_images\/Untitled-50_bb1049b8-24f1-4cfa-8f1b-93dcfd090e32.png",
+            "overlay_opacity": 30,
+            "text_position": "bottom-left",
+            "subheading": "Premium Labels in One Place",
+            "title": "New Arrivals",
+            "text": "Fresh Finds Await",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "section-grid-1-block-0",
+        "section-grid-1-block-1"
+      ],
+      "settings": {
+        "desktop_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 150,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--solid",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "section_bg_color": "",
+        "gradient": "",
+        "enable_slider_mobile": false,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper--full-padded",
+        "add_gutter": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "section-look-0": {
+      "type": "section-look",
+      "blocks": {
+        "product_pXdLQV": {
+          "type": "product",
+          "settings": {
+            "product": "brunello-cucinelli-sweaters-brown-mpg731309pc3592-ai25",
+            "position_x_desktop": 50,
+            "position_y_desktop": 50,
+            "position_x_mobile": 50,
+            "position_y_mobile": 50,
+            "info_bubbles_position_desktop": 30,
+            "info_bubbles_position_mobile": 30
+          }
+        },
+        "section-look-0-block-1": {
+          "type": "product",
+          "settings": {
+            "product": "brunello-cucinelli-shirts-white-ma783rd606c015-p25",
+            "position_x_desktop": 69,
+            "position_y_desktop": 46,
+            "position_x_mobile": 75,
+            "position_y_mobile": 45,
+            "info_bubbles_position_desktop": 5,
+            "info_bubbles_position_mobile": 30
+          }
+        },
+        "section-look-0-block-2": {
+          "type": "product",
+          "settings": {
+            "product": "brunello-cucinelli-jackets-bordeaux-mpmul7453pc4193-ai25",
+            "position_x_desktop": 43,
+            "position_y_desktop": 70,
+            "position_x_mobile": 39,
+            "position_y_mobile": 66,
+            "info_bubbles_position_desktop": 25,
+            "info_bubbles_position_mobile": 25
+          }
+        }
+      },
+      "block_order": [
+        "product_pXdLQV",
+        "section-look-0-block-1",
+        "section-look-0-block-2"
+      ],
+      "settings": {
+        "products_on_row": 2,
+        "image": "shopify:\/\/shop_images\/190099698---fw25---brunellocucinellipre---mpg731309pc3592_3_p_9d6ad445-e355-420f-b3b0-86f7dcc8963e.jpg",
+        "image_position": "is-reversed",
+        "enable_aspect_ratio": true,
+        "main_image_aspect_ratio": 1,
+        "title": "Shop the Look",
+        "text": "<p>Our most popular looks of the season<\/p>",
+        "text_alignment": "text-left",
+        "show_hotspots": true,
+        "show_arrow": true,
+        "popup_heading": "Shop the Look",
+        "show_free_shipping_message": true,
+        "content_color": "text-dark",
+        "hotspot_color": "",
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "hotspot_contents_text_color": "text-dark",
+        "hotspot_contents_bg_color": "#ffffff",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-press-0": {
+      "type": "section-press",
+      "blocks": {
+        "section-press-0-block-0": {
+          "type": "press",
+          "settings": {
+            "text": "<p>Each piece hugs the body perfectly, enhancing every curve. It’s like the garment was made just for me. True luxury and sophistication.<\/p>",
+            "link": "shopify:\/\/collections\/alaia",
+            "press_logo": "shopify:\/\/shop_images\/alaia_logo.png",
+            "logo_width": 80
+          }
+        },
+        "section-press-0-block-1": {
+          "type": "press",
+          "settings": {
+            "text": "<p>Every time I wear my Casablanca outfit, I feel like I'm not just dressed up but transported to a world of vibrant colors and exquisite patterns.<\/p>",
+            "link": "shopify:\/\/collections\/casablanca",
+            "press_logo": "shopify:\/\/shop_images\/logo_casa_blanca.png",
+            "logo_width": 80
+          }
+        },
+        "section-press-0-block-2": {
+          "type": "press",
+          "settings": {
+            "text": "<p>I've always admired Jil Sander for its minimalist aesthetic, but owning a piece from their collection is truly a different experience.<\/p>",
+            "link": "shopify:\/\/collections\/jil-sander",
+            "press_logo": "shopify:\/\/shop_images\/jil-sander-logo.png",
+            "logo_width": 80
+          }
+        }
+      },
+      "block_order": [
+        "section-press-0-block-0",
+        "section-press-0-block-1",
+        "section-press-0-block-2"
+      ],
+      "settings": {
+        "title": "Our customers Says",
+        "show_quotations": true,
+        "show_rounded_corners": false,
+        "logo_opacity": 50,
+        "autoplay": true,
+        "duration": 4,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-banner-text-columns-0": {
+      "type": "section-banner-text-columns",
+      "blocks": {
+        "section-banner-text-columns-0-block-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Macro_fashion_still_Penn_calm_169_head-to-rib_c067f554-1d8d-4800-b1b6-263bcdf5c1aa_0.png",
+            "overlay_opacity": 10,
+            "subheading": "Discover the Must-Have Styles",
+            "heading": "Latest Trends",
+            "text": "",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/women"
+          }
+        },
+        "section-banner-text-columns-0-block-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Macro_fashion_portrait_chin-to-ribs_Penn_disc_f85bd814-035d-4f76-8283-e619c7adb7b4_0.png",
+            "overlay_opacity": 10,
+            "subheading": "Future of Fashion: Trends & Tech",
+            "heading": "OUR BLOG",
+            "text": "",
+            "button_text": "Read More",
+            "button_link": "shopify:\/\/blogs\/ai-fashion-hub"
+          }
+        },
+        "section-banner-text-columns-0-block-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_Im_imagine_Macro_fashion_still_Penn_calm_169_head-to-_e9663355-73cf-4d35-82f8-266a632326e1_1.png",
+            "overlay_opacity": 10,
+            "subheading": "Explore AI-Curated Style",
+            "heading": "Instagram",
+            "text": "",
+            "button_text": "Follow Us",
+            "button_link": "https:\/\/www.instagram.com\/aumi_4\/"
+          }
+        }
+      },
+      "block_order": [
+        "section-banner-text-columns-0-block-0",
+        "section-banner-text-columns-0-block-1",
+        "section-banner-text-columns-0-block-2"
+      ],
+      "settings": {
+        "appearance": "columns",
+        "content_alignment": "center",
+        "text_alignment": "text-center",
+        "section_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_section_height": "five-fifty-height-mobile",
+        "text_color": "text-light",
+        "button_color": "btn--white",
+        "button_style": "btn--text",
+        "button_size": "btn--small",
+        "show_single_image": false,
+        "heading_size": 100,
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-newsletter-0": {
+      "type": "section-newsletter",
+      "settings": {
+        "flex_align": "align--middle-split",
+        "text_color": "text-dark",
+        "title": "GET 5% OFF YOUR FIRST ORDER",
+        "text": "<p>Stay ahead with exclusive promotions, bespoke new arrivals, and essential updates, all delivered seamlessly to your inbox.<\/p>",
+        "extra_fields": "name",
+        "button_text": "",
+        "bg_color": "",
+        "gradient": "",
+        "image_height": "three-fifty-height",
+        "overlay_opacity": 10,
+        "width": "wrapper",
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "section-icons-row-0": {
+      "type": "section-icons-row",
+      "blocks": {
+        "section-icons-row-0-block-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Shipping",
+            "text": "<p>on all order over $200<\/p>"
+          }
+        },
+        "section-icons-row-0-block-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Free Returns",
+            "text": "<p>within 14  days of purchase<\/p>"
+          }
+        },
+        "section-icons-row-0-block-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "none",
+            "title": "Carbon‑neutral shipping",
+            "text": "<p>on every order<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "section-icons-row-0-block-0",
+        "section-icons-row-0-block-1",
+        "section-icons-row-0-block-2"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 20,
+        "show_vertical_borders": true,
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "heading_size": 100,
+        "text_size": 90,
+        "bg_color": "#f4f3f1",
+        "gradient": "",
+        "text_color": "#000000",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    }
+  },
+  "order": [
+    "section_banner_image_gB6GHp",
+    "section-slideshow-0",
+    "section-countdown-0",
+    "section-text-0",
+    "section-grid-0",
+    "section-marquee-0",
+    "section-promotion-row-0",
+    "section-marquee-1",
+    "section-collection-0",
+    "section-sticky-image-cards-0",
+    "section-testimonials-with-images-0",
+    "section-overlapping-images-0",
+    "section-marquee-2",
+    "section-grid-1",
+    "section-look-0",
+    "section-press-0",
+    "section-banner-text-columns-0",
+    "section-newsletter-0",
+    "section-icons-row-0"
+  ]
+}

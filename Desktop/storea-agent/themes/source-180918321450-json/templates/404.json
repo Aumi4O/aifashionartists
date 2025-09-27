@@ -1,0 +1,39 @@
+{
+  "sections": {
+    "main": {
+      "type": "404",
+      "settings": {}
+    },
+    "section_collection_TxxLKT": {
+      "type": "section-collection",
+      "settings": {
+        "collection": "best-selling-products",
+        "products_layout": "grid",
+        "number_of_products": 8,
+        "products_per_row_on_desktop": 4,
+        "columns_mobile": "2",
+        "text_alignment": "text-left",
+        "title": "<p>Trending Now – Shop Our Best Sellers<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000",
+        "highlight_text_color": "",
+        "heading_size": 100,
+        "text": "<p>Luxury’s Most Wanted – Don’t Miss Out.<\/p>",
+        "text_size": 100,
+        "button_position": "top",
+        "button_text": "Shop Now",
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--large",
+        "enable_slider_mobile": true,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_collection_TxxLKT"
+  ]
+}

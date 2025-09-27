@@ -1,0 +1,278 @@
+{
+  "sections": {
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_pwpcdU": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>{{ collection.metafields.custom.subheading.value }}<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>{{ collection.title }}<\/p>",
+            "size": 100,
+            "heading_highlight_type": "italics",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000"
+          }
+        },
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>{{ collection.title }}<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pwpcdU",
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-heading-1",
+        "template--21524360200470__8d9a9dcc-b650-4240-8dbe-558bd59ba535-text-1"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 16,
+        "padding_bottom": 0
+      }
+    },
+    "section_custom_html_aGYpwe": {
+      "type": "section-custom-html",
+      "settings": {
+        "custom_code": "<style>\n\/* Style for the category buttons *\/\n.subcat-grid-link__title {\n    display: inline-block;\n    border: 1px solid;\n    border-radius: 10px;\n    padding: 10px 20px; \/* Increased padding for a more button-like appearance *\/\n    text-align: center;\n    text-decoration: none;\n    color: #000; \/* Text color *\/ \n    background-color: #fff; \/* Button background color *\/\n    margin: 5px; \/* Margin between buttons *\/\n    font-family: var(--font-accent, 'YourFallbackFont'), monospace; \/* Use the theme's accent font *\/\n    font-size: var(--font-accent-size, 1rem); \/* Use accent text size *\/\n    letter-spacing: var(--font-accent-letter-spacing, normal); \/* Use accent text letter spacing *\/\n    text-transform: uppercase; \/* Transform text to uppercase *\/\n    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); \/* Optional: adds a subtle shadow for depth *\/\n    transition: background-color 0.3s ease, color 0.3s ease; \/* Smooth transition for hover effects *\/\n}\n\n\/* Hover effect for buttons *\/\n.subcat-grid-link a:hover {\n    background-color: #000; \/* Hover background color *\/\n    color: #fff; \/* Hover text color *\/\n}\n\n\/* Container styling *\/\n.subcat-grid-link__title  {\n    display: flex;\n    flex-wrap: wrap; \/* Allow the buttons to wrap to the next line *\/\n    justify-content: center; \/* Center align the buttons *\/\n}\n\n\/* Additional text styling *\/\np.subcat-grid-link__title {\n    text-transform: uppercase;\n    font-family: var(--font-accent, 'YourFallbackFont'), monospace; \/* Use the theme's accent font *\/\n    font-size: var(--font-accent-size, 1rem); \/* Use accent text size *\/\n}\n<\/style>",
+        "width": "wrapper",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17437591020e725baf": {
+      "type": "apps",
+      "blocks": {
+        "categories_category_icons_F9Mn4n": {
+          "type": "shopify:\/\/apps\/categories\/blocks\/category-icons\/2d8e3108-b94b-4b0c-8f03-e3726bad87be",
+          "settings": {
+            "alignment": "left",
+            "spacing_above": 0,
+            "spacing_below": 0,
+            "design": "square",
+            "add_border": false,
+            "border_colour": "#999999",
+            "show_large_up": "4up",
+            "show_medium_up": "3up",
+            "show_small_up": "2up",
+            "show_only_on_first": false,
+            "show_product_counts": true,
+            "hide_empty_subcategories": false,
+            "show_collection_images": "neverimage",
+            "show_noimage_uploaded": "noimage",
+            "override_linktext_colour": false,
+            "linktext_colour": "#0000ee",
+            "title_decoration": "",
+            "title_transform": "",
+            "title_text_align": ""
+          }
+        }
+      },
+      "block_order": [
+        "categories_category_icons_F9Mn4n"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "disabled": true,
+      "settings": {
+        "subcollections": [],
+        "limit": 8,
+        "layout": "grid",
+        "image_aspect_ratio": 0.6,
+        "image_overlay_opacity": 10,
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-light",
+        "padding_top": 30,
+        "padding_bottom": 14
+      }
+    },
+    "b5058786-b763-4ab8-b375-d96e3dbab791": {
+      "type": "section-grid",
+      "blocks": {
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "width": "100",
+            "image": "{{ collection.image }}",
+            "overlay_opacity": 10,
+            "text_position": "center",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": "",
+            "overlay_text_color": "text-light"
+          }
+        }
+      },
+      "block_order": [
+        "template--21524360200470__b5058786-b763-4ab8-b375-d96e3dbab791-image-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_height": "three-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "heading_size": 130,
+        "button_1_color": "btn--white",
+        "button_1_style": "btn--text",
+        "button_1_size": "btn--small",
+        "button_2_color": "btn--black",
+        "button_2_style": "btn--text",
+        "button_2_size": "btn--small",
+        "section_bg_color": "",
+        "gradient": "",
+        "enable_slider_mobile": true,
+        "columns_mobile": "1",
+        "overlay_text": true,
+        "width": "wrapper--full-padded",
+        "add_gutter": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "collection",
+      "blocks": {
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9": {
+          "type": "promo",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__0_c2960e75-bf48-4956-88f3-45f1d275aba5.png",
+            "position": 5,
+            "width": "half",
+            "title": "<p>Shop Our Sale<\/p>",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#fbcaff",
+            "highlight_text_color": "#ffffff",
+            "heading_size": 100,
+            "content": "Unmissable Deals on Luxury Brands",
+            "text_size": 100,
+            "text_color": "text-light",
+            "text_position": "bottom-left",
+            "layout": "stacked",
+            "overlay_opacity": 10,
+            "bg_color": "#f5f4f1",
+            "button_text": "",
+            "button_link": "shopify:\/\/collections\/sale",
+            "button_color": "btn--white",
+            "button_style": "btn--solid-border",
+            "button_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "96343c36-f832-4740-8cd6-2a90dcf9e4d9"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "enable_sorting": true,
+        "enable_filters": true,
+        "filters_layout": "closed",
+        "show_more": true,
+        "filter_mode": "default",
+        "bg_color": "",
+        "padding_top": 30,
+        "padding_bottom": 60
+      }
+    },
+    "hero": {
+      "type": "collection-image-with-title",
+      "custom_css": [
+        ".banner .wrapper--narrow {max-width: 100%;}",
+        "h2 {--heading-size: 20px;}",
+        ".rte h2 {margin: 0px;}"
+      ],
+      "settings": {
+        "banner_height": "one-third-height",
+        "text_position": "middle-left",
+        "show_image": true,
+        "text_color": "text-dark",
+        "overlay_opacity": 10,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "17571703466863b40d": {
+      "type": "apps",
+      "blocks": {
+        "categories_category_breadcrumbs_6q64wH": {
+          "type": "shopify:\/\/apps\/categories\/blocks\/category-breadcrumbs\/2d8e3108-b94b-4b0c-8f03-e3726bad87be",
+          "settings": {
+            "override_linktext_colour": false,
+            "linktext_colour": "#0000EE",
+            "separator_colour": "#555555",
+            "producttitle_colour": "#555555",
+            "title_decoration": "",
+            "title_transform": "",
+            "spacing_above": 0,
+            "spacing_below": 0,
+            "sep_plus_class": "breadcrumb__sep_plus5",
+            "separator_char_code": "rsaquo;",
+            "hide_old_breadcrumb": false,
+            "show_catroot": true,
+            "link_catroot": "\/",
+            "text_catroot": "Home",
+            "show_tags": true,
+            "show_finalbread_as_textonly": false,
+            "insert_jsonld": true,
+            "insert_shortlinkfix": false,
+            "prod_multicat_sel": "leastprod",
+            "link_catall": "\/collections\/all",
+            "text_catall": "All Products",
+            "show_product_title": true,
+            "truncate_limit": 0,
+            "prod_ignore_referrer": false,
+            "old_breadcrumb_class": "breadcrumb"
+          }
+        }
+      },
+      "block_order": [
+        "categories_category_breadcrumbs_6q64wH"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "8d9a9dcc-b650-4240-8dbe-558bd59ba535",
+    "section_custom_html_aGYpwe",
+    "17437591020e725baf",
+    "subcollections",
+    "b5058786-b763-4ab8-b375-d96e3dbab791",
+    "main",
+    "hero",
+    "17571703466863b40d"
+  ]
+}

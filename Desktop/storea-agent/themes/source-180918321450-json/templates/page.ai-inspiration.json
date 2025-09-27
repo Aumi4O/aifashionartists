@@ -1,0 +1,633 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_social_gallery_QaUiB9": {
+      "type": "section-social-gallery",
+      "blocks": {
+        "image_Xp9iKi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_1a90496d-66a0-4acd-a0ca-9c32bd080d99_3.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_64aML6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_5462c59c-c300-44fb-a124-e15b8420d7c8_2.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/newest-products",
+            "link_target_blank": true
+          }
+        },
+        "image_87NtQG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_5462c59c-c300-44fb-a124-e15b8420d7c8_0.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_dxDd76": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_5462c59c-c300-44fb-a124-e15b8420d7c8_3.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_G9AWT6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_5462c59c-c300-44fb-a124-e15b8420d7c8_1.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_87tcQY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_5462c59c-c300-44fb-a124-e15b8420d7c8_0.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_8HRCbJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_c8c21f76-c0ca-47e3-9f62-ccafb9fbd941_3.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_Knhe6C": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_388521f3-f22f-4173-83a2-266b71090964_2.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_G8dWbY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_c8c21f76-c0ca-47e3-9f62-ccafb9fbd941_2.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_dkTHrW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_c8c21f76-c0ca-47e3-9f62-ccafb9fbd941_1.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        },
+        "image_af6g4K": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_A_graceful_model_walking_through_the_Jardin_d_c8c21f76-c0ca-47e3-9f62-ccafb9fbd941_0.png",
+            "text": "<p>@aumi_4<\/p>",
+            "text_size": 75,
+            "button_text": "Shop +600 Brands",
+            "button_link": "shopify:\/\/collections\/new-products",
+            "link_target_blank": true
+          }
+        }
+      },
+      "block_order": [
+        "image_Xp9iKi",
+        "image_64aML6",
+        "image_87NtQG",
+        "image_dxDd76",
+        "image_G9AWT6",
+        "image_87tcQY",
+        "image_8HRCbJ",
+        "image_Knhe6C",
+        "image_G8dWbY",
+        "image_dkTHrW",
+        "image_af6g4K"
+      ],
+      "settings": {
+        "align_heading": "text-left",
+        "align_text": "text-center",
+        "columns": 4,
+        "aspect_ratio_desktop": 2,
+        "aspect_ratio_mobile": 2,
+        "subheading": "📍 AI Fashion Hub – Your Guide to the Future of Fashion",
+        "title": "AI in Fashion: How Technology is Transforming the Industry",
+        "heading_size": 120,
+        "button_color": "btn--black",
+        "button_style": "btn--text",
+        "button_size": "btn--medium",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_cqHhkV": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_nKytA9": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>📍 <strong>AI Fashion Hub – Your Guide to the Future of Fashion<\/strong><\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_JLT8xq": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>AI in Fashion: How Technology is Transforming the Industry<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_eJYxqR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A decade ago, the idea of artificial intelligence influencing fashion might have sounded like pure science fiction. But today, AI is not just an experimental tool—it’s a driving force reshaping the industry. From <strong>Gucci and Prada to Zara and Balenciaga<\/strong>, brands are integrating AI to <strong>forecast trends, enhance design processes, and personalize shopping experiences<\/strong>.<\/p><p><br\/><\/p><p>But what does this mean for fashion?<\/p><p>👉 Will AI replace designers?<\/p><p>👉 How are luxury brands leveraging AI?<\/p><p>👉 Can AI truly predict future trends?<\/p><p><br\/><\/p><p>Let’s dive into the AI revolution that’s rewriting the rules of style.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nKytA9",
+        "heading_JLT8xq",
+        "text_eJYxqR"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_XtK9tX": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_pxJJig": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_jBmbNN": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>I. AI and Fashion: A Revolution Already in Motion<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_7biAbq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fashion has always been about <strong>creativity, intuition, and craftsmanship<\/strong>. But today, data has entered the equation. AI analyzes <strong>millions of images, market trends, and consumer behaviors<\/strong>, allowing brands to make smarter, faster, and more sustainable decisions.<\/p><p><br\/><\/p><p><strong>Luxury brands leading the AI charge:<\/strong><\/p><p><br\/><\/p><p>✅ <strong>Burberry<\/strong> uses AI to analyze shopping behavior and predict demand.<\/p><p>✅ <strong>Gucci<\/strong> has integrated AI into its <strong>e-commerce personalization strategy<\/strong>.<\/p><p>✅ <strong>Zara<\/strong> employs AI-powered trend analysis, scanning social media and search data to anticipate the next big thing.<\/p><p><br\/><\/p><p>AI isn’t just a behind-the-scenes tool—it’s becoming <strong>embedded into the very DNA of modern fashion brands<\/strong>.<\/p>",
+            "size": 100
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pxJJig",
+        "heading_jBmbNN",
+        "text_7biAbq"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_g9peK9": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_xpjT7f": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_mndzfH": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>II. AI in Design: A Creative Partner, Not a Competitor<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_LnL8Wk": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>II. AI in Design: A Creative Partner, Not a Competitor<\/strong><\/p><p><br\/><\/p><p>When <strong>Balenciaga released AI-generated campaign imagery<\/strong>, the fashion world took notice. Could AI <strong>design<\/strong> the next generation of couture?<\/p><p><br\/><\/p><p><strong>How AI is revolutionizing fashion design:<\/strong><\/p><p><br\/><\/p><p>💡 <strong>Inspiration & Ideation:<\/strong> AI studies a brand’s archives to generate fresh silhouettes.<\/p><p>🧵 <strong>Material Selection:<\/strong> AI predicts fabric trends based on <strong>climate data, sustainability metrics, and consumer interest<\/strong>.<\/p><p>📏 <strong>Customization & Fit:<\/strong> AI-powered design platforms create <strong>tailor-made<\/strong> garments based on individual body data.<\/p><p><br\/><\/p><p>Brands like <strong>H&M and Tommy Hilfiger<\/strong> are already experimenting with AI-driven design assistants. But here’s the real question: <strong>Can AI ever replace the creative genius of human designers?<\/strong> For now, AI acts as a <strong>co-creator<\/strong>, enhancing creativity rather than replacing it.<\/p><p><br\/><\/p><p>🔗 <strong>Related:<\/strong> <a href=\"\/blogs\/ai-fashion-hub\/ai-in-fashion-design\" title=\"AI in Fashion Design: A New Creative Partner or the Designer’s Rival?\">How AI is transforming fashion design.<\/a><\/p>",
+            "size": 100
+          }
+        },
+        "button_AixDxy": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_xpjT7f",
+        "heading_mndzfH",
+        "text_LnL8Wk",
+        "button_AixDxy"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_icVkhW": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_QG38dY": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_xKadaw": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>III. AI Trend Forecasting: How Algorithms Predict the Future of Fashion<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_c7NKMM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For decades, trendsetting was the exclusive domain of <strong>editors, runway shows, and street style photographers<\/strong>. Today, AI-powered analytics are <strong>turning trend prediction into a science<\/strong>.<\/p><p><br\/><\/p><p><strong>How AI predicts fashion trends:<\/strong><\/p><p><br\/><\/p><p>📊 <strong>Analyzes millions of social media posts, search trends, and shopping behaviors.<\/strong><\/p><p>📈 <strong>Tracks real-time runway data and consumer sentiment.<\/strong><\/p><p>🌍 <strong>Incorporates environmental, economic, and cultural shifts.<\/strong><\/p><p><br\/><\/p><p>AI has already <strong>predicted the rise of sustainable fashion<\/strong>, detecting a <strong>25% increase in “eco-friendly fashion” searches<\/strong>over two years. Now, AI is being used to <strong>forecast the next viral color, silhouette, or accessory trend<\/strong>.<\/p><p><br\/><\/p><p>🔗 <strong>Related:<\/strong> <a href=\"\/blogs\/ai-fashion-hub\/ai-trend-forecasting\" title=\"AI Trend Forecasting: How Algorithms Shape the Future of Fashion\">Can AI truly predict fashion trends?<\/a><\/p>",
+            "size": 100
+          }
+        },
+        "button_dB3RyQ": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_QG38dY",
+        "heading_xKadaw",
+        "text_c7NKMM",
+        "button_dB3RyQ"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_4GTNEg": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_nQC88G": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_AtT3gM": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>IV. AI-Powered Personal Stylists: The Future of Shopping<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_jrxfim": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Imagine walking into a store—or logging onto a website—where AI instantly understands your <strong>style, size, and preferences<\/strong>, curating a wardrobe just for you. That’s the power of <strong>AI stylists<\/strong>.<\/p><p><br\/><\/p><p><strong>What AI fashion stylists can do:<\/strong><\/p><p><br\/><\/p><p>👗 <strong>Curate outfits<\/strong> based on your personal style and past purchases.<\/p><p>🎨 <strong>Analyze color, proportions, and seasonal trends<\/strong> to offer expert recommendations.<\/p><p>🛍 <strong>Assist in virtual try-ons,<\/strong> helping you shop from anywhere.<\/p><p><br\/><\/p><p><strong>Gucci and Prada<\/strong> are already using AI-powered virtual styling and try-on technology, bridging the gap between <strong>luxury and convenience<\/strong>.<\/p><p><\/p><p>AUMI4 Developing Try on Tool and it  will be available soon.<\/p><p><br\/><\/p><p>🔗 <strong>Related:<\/strong> <a href=\"\/blogs\/ai-fashion-hub\/ai-stylists\" title=\"AI Stylists: The Future of Personal Shopping\">How AI stylists are reshaping personal fashion.<\/a><\/p>",
+            "size": 100
+          }
+        },
+        "button_RdrJtj": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nQC88G",
+        "heading_AtT3gM",
+        "text_jrxfim",
+        "button_RdrJtj"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_enGd3H": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_Cy4GHU": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_rQ9bGR": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>V. AI and Luxury: Authentication, Investment, and the Future of High Fashion<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_zyWjEB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In the world of <strong>designer handbags and rare collectibles<\/strong>, AI is a <strong>game-changer for authentication and valuation<\/strong>.<\/p><p><br\/><\/p><p><strong>How AI authenticates luxury goods:<\/strong><\/p><p><br\/><\/p><p>🔎 <strong>Scans leather patterns, stitching, and hardware details<\/strong> for discrepancies.<\/p><p>📜 <strong>Traces the history of a handbag, ensuring provenance and authenticity.<\/strong><\/p><p>💰 <strong>Uses market analytics to predict future resale value.<\/strong><\/p><p><br\/><\/p><p>🔗  PURSE IQ (coming soon) will be an AI-powered platform for <strong>analyzing luxury handbags<\/strong>, helping fashion investors determine <strong>which pieces will hold or increase in value<\/strong>. Whether it’s a <strong>Hermès Birkin or a Chanel Classic<\/strong>, AI can now offer <strong>data-driven insights into high-fashion investments<\/strong>.<\/p><p><br\/><\/p><p>🔗 <strong>Related:<\/strong> <a href=\"\/blogs\/ai-fashion-hub\/designer-handbags-and-ai\" title=\"Designer Handbags and AI: The Next Frontier in Luxury Authentication and Investment\">How AI is reshaping luxury handbag authentication.<\/a><\/p>",
+            "size": 100
+          }
+        },
+        "button_Gyq4y9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_Cy4GHU",
+        "heading_rQ9bGR",
+        "text_zyWjEB",
+        "button_Gyq4y9"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_text_GV9x9E": {
+      "type": "section-text",
+      "blocks": {
+        "subheading_8P48nJ": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Subheading<\/p>",
+            "size": 100,
+            "margin_bottom": 16
+          }
+        },
+        "heading_HJ9Yij": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><strong>Conclusion: AI + Fashion = A New Era, Not a Takeover<\/strong><\/p>",
+            "size": 100,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": ""
+          }
+        },
+        "text_efzP8m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Artificial intelligence isn’t replacing fashion—it’s <strong>expanding its creative and commercial possibilities<\/strong>. The <strong>next era of fashion<\/strong> won’t be a battle between <strong>technology and designers<\/strong>, but rather a <strong>fusion of data-driven insights and human artistry<\/strong>.<\/p><p><br\/><\/p><p>At <strong>AI Fashion Hub<\/strong>, we’re tracking every evolution, from <strong>AI-generated collections to hyper-personalized shopping experiences<\/strong>. The question isn’t whether AI will shape the future of fashion—it’s <strong>how far it will go<\/strong>.<\/p><p><br\/><\/p><p>And who knows? In the near future, <strong>your favorite stylist might not be human—but an AI that knows your wardrobe better than you do<\/strong>.<\/p><p><br\/><\/p><p>🔗 <strong>Up Next:<\/strong><\/p><p><\/p><ul><li><a href=\"\/blogs\/ai-fashion-hub\/ai-and-sustainable-fashion\" title=\"AI and Sustainable Fashion — Driving Eco-Friendly Innovation\">AI and Sustainable Fashion — Driving Eco-Friendly Innovation <\/a><\/li><li><a href=\"#\">AI and Luxury Retail — Personalization Meets Prestige <\/a><\/li><li><a href=\"#\">AI & Personalization — Beyond the Basics <\/a><\/li><li><a href=\"\/blogs\/ai-fashion-hub\/the-future-of-ai-in-fashion\" title=\"The Future of AI in Fashion — Merging Reality & Metaverse\">The Future of AI in Fashion — Merging Reality & Metaverse<\/a><\/li><li><a href=\"\/blogs\/ai-fashion-hub\/nfts-and-fashion\" title=\"NFTs and Fashion — The New Frontier of Collectible Treasures\">NFTs and Fashion — The New Frontier of Collectible Treasures <\/a><\/li><\/ul>",
+            "size": 100
+          }
+        },
+        "button_iH3yYf": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "Read More",
+            "button_link": "",
+            "button_color": "btn--black",
+            "button_style": "btn--solid",
+            "button_size": "btn--medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_8P48nJ",
+        "heading_HJ9Yij",
+        "text_efzP8m",
+        "button_iH3yYf"
+      ],
+      "settings": {
+        "text_position": "left",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section_video_nGxrKd": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7d4ab5f1b6c44175a9a4c423668325e1.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "<p>Welcome to Palo Alto<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "This text helps you provide some more detail to the title above.",
+        "heading_size": 100,
+        "button_text": "Welcome",
+        "button_link": "",
+        "button_color": "btn--white",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--medium"
+      }
+    },
+    "section_video_VHxNDa": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/a9017270f6774d968b9115e277ee165b.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "<p>Welcome to Palo Alto<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "This text helps you provide some more detail to the title above.",
+        "heading_size": 100,
+        "button_text": "Welcome",
+        "button_link": "",
+        "button_color": "btn--white",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--medium"
+      }
+    },
+    "section_video_zJKwDT": {
+      "type": "section-video",
+      "settings": {
+        "video_height": "six-fifty-height",
+        "enable_mobile_height": false,
+        "mobile_height": "six-fifty-height-mobile",
+        "text_position": "middle-center",
+        "video_link_bg": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9dffe3c02c164349864b0c2cdc468f6b.mp4",
+        "video_link": "",
+        "overlay_opacity": 10,
+        "text_color": "text-light",
+        "title": "<p>Welcome to Palo Alto<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "text": "This text helps you provide some more detail to the title above.",
+        "heading_size": 100,
+        "button_text": "Welcome",
+        "button_link": "",
+        "button_color": "btn--white",
+        "button_style": "btn--solid-border",
+        "button_size": "btn--medium"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "section_social_gallery_QaUiB9",
+    "section_text_cqHhkV",
+    "section_text_XtK9tX",
+    "section_text_g9peK9",
+    "section_text_icVkhW",
+    "section_text_4GTNEg",
+    "section_text_enGd3H",
+    "section_text_GV9x9E",
+    "section_video_nGxrKd",
+    "section_video_VHxNDa",
+    "section_video_zJKwDT"
+  ]
+}

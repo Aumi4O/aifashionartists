@@ -1,0 +1,518 @@
+{
+  "sections": {
+    "main": {
+      "type": "product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "subheading": "vendor",
+            "title_size": 100,
+            "price_size": 100,
+            "bold_price": false,
+            "padding_bottom": 20
+          }
+        },
+        "inventory_countdown": {
+          "type": "inventory_countdown",
+          "settings": {
+            "max_inventory": 10,
+            "hide_inventory_count": true,
+            "padding_bottom": 20
+          }
+        },
+        "afterpay_on_site_messaging_payments_messaging_D6rBkx": {
+          "type": "shopify:\/\/apps\/afterpay-on-site-messaging\/blocks\/payments-messaging\/f45a5524-d177-4475-bf59-281efd2215a8",
+          "settings": {
+            "text_align": "inherit",
+            "margin_top": 16,
+            "margin_bottom": 16,
+            "color": "",
+            "size": "md",
+            "intro_text": "or",
+            "show_interest_free": true,
+            "payment_amount_is_bold": true,
+            "show_with": true,
+            "logo_type": "badge",
+            "logo_theme": "black-on-mint",
+            "modal_link_style": "circled-info-icon",
+            "modal_theme": "mint",
+            "breakpoint": 749,
+            "text_align_mobile": "inherit",
+            "margin_top_mobile": 16,
+            "margin_bottom_mobile": 16,
+            "show_lower_limit": true,
+            "show_upper_limit": true,
+            "show_if_outside_limits": true,
+            "product": "{{product}}"
+          }
+        },
+        "sezzle_widget_widget_block_JbQFat": {
+          "type": "shopify:\/\/apps\/sezzle-widget\/blocks\/widget-block\/f3a53793-e118-4764-a86b-a79bfedb0d5f",
+          "settings": {
+            "heading": "Sezzle Widget",
+            "font_size": 14,
+            "font_family": "inherit"
+          }
+        },
+        "form": {
+          "type": "form",
+          "settings": {
+            "show_labels": true,
+            "show_quantity": false,
+            "show_payment_button": true,
+            "enable_subscriptions_selectors": true,
+            "padding_bottom": 20
+          }
+        },
+        "text_JCqnbQ": {
+          "type": "text",
+          "settings": {
+            "title": "<p><strong>Product Details:<\/strong><\/p>",
+            "text_alignment": "left",
+            "padding_bottom": 20
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "enable_full_width": false,
+            "padding_bottom": 20
+          }
+        },
+        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced": {
+          "type": "icon",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "icon_color": "",
+            "icon_width": 20,
+            "icon_text": "Carbon‑neutral shipping",
+            "text_size": 90,
+            "width": "full",
+            "text_alignment": "left",
+            "bg_color": "",
+            "padding_bottom": 20
+          }
+        },
+        "product_accordion": {
+          "type": "product_accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": true,
+            "enable_full_width": false,
+            "tabs_bg_color": "",
+            "text_color": "text-dark",
+            "show_accordion_divider": false,
+            "line_thickness": "normal",
+            "accordion_heading": "Materials and specs",
+            "heading_style": "font-body",
+            "accordion_text": "<p>Made in: {{ product.metafields.luxury.made_in.value }}<\/p><p>Year: {{ product.metafields.luxury.year.value }}<\/p><p>Material: {{ product.metafields.luxury.material | metafield_tag }}<\/p><p>Size info: {{ product.metafields.luxury.size_info | metafield_tag }}<\/p><p>Size and Fit: {{ product.metafields.luxury.size_and_fit | metafield_tag }}<\/p><p>Color: {{ product.metafields.luxury.color_detail | metafield_tag }}<\/p><p>Season: {{ product.metafields.luxury.season_one | metafield_tag }} {{ product.metafields.luxury.season_two | metafield_tag }}<\/p>",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a": {
+          "type": "product_accordion",
+          "settings": {
+            "show_description": false,
+            "show_read_more": true,
+            "enable_full_width": false,
+            "tabs_bg_color": "",
+            "text_color": "text-dark",
+            "show_accordion_divider": false,
+            "line_thickness": "normal",
+            "accordion_heading": "Shipping and returns",
+            "heading_style": "font-body",
+            "accordion_text": "<p><strong>Swift & Reliable Delivery<\/strong><\/p><p>Experience the ease and excitement of online shopping with AUMI 4, backed by our commitment to quick, worry-free shipping. We dispatch your orders from our expansive warehouse in Milan—often on the very same day you place them. With our trusted partner DHL, your package can arrive in as little as 3–4 business days. We work hard to meet (and usually beat) this timeframe, ensuring you get your fashion fix faster than ever.<\/p><p><br\/><\/p><p><strong>Hassle-Free Returns & Exchanges<\/strong><\/p><p>Your satisfaction is our top priority. If something isn’t quite right, enjoy our 14-day exchange and return policy, designed to give you total peace of mind. Simply visit our <a href=\"https:\/\/aumi4.returnscenter.com\/\" title=\"https:\/\/aumi4.returnscenter.com\/\">Returns & Exchanges Center<\/a> to start the process—whether you’d like a different size, a new item, or a refund, we’re here to make things right.<\/p><p><br\/><\/p><p>Need more information? Our customer service team is always ready to help at <strong>support@aumi4.com<\/strong>. Shop with confidence, knowing that AUMI 4 has you covered—every step of the way.<\/p>",
+            "accordion_page": "",
+            "padding_bottom": 10
+          }
+        },
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon_name": "support",
+            "icon_width": 25,
+            "title": "Need help with sizing?",
+            "text": "<p>This content type will accept <strong>rich text<\/strong> to help with adding styles and links to additional pages or content. Use this to add supplementary information to help your buyers.<\/p>",
+            "bg_color": "#f7f9fa",
+            "text_color": "#000000",
+            "padding_bottom": 20
+          }
+        },
+        "upsell": {
+          "type": "upsell",
+          "settings": {
+            "product_list": [
+              "givenchy-antigona-east-west-small-red-bag-bb5130b2aq-r_giv-640_100",
+              "givenchy-bags-beige-bb50n2b1drgtote255",
+              "jacquemus-bags-black"
+            ],
+            "padding_bottom": 20
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "inventory_countdown",
+        "afterpay_on_site_messaging_payments_messaging_D6rBkx",
+        "sezzle_widget_widget_block_JbQFat",
+        "form",
+        "text_JCqnbQ",
+        "description",
+        "7ddd2db6-1d92-43ee-a7d9-e786662f9ced",
+        "product_accordion",
+        "9927e90d-2ecb-4104-af67-0dadf75b2a0a",
+        "a42f4e7d-6a8d-42a4-80af-29ec3b3b52d9",
+        "upsell"
+      ],
+      "settings": {
+        "product_sticky_enable": true,
+        "image_layout": "stacked",
+        "image_width": "large",
+        "product_image_aspect_ratio": true,
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "bg_color": "",
+        "gradient": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "related": {
+      "type": "related-products",
+      "blocks": {
+        "related": {
+          "type": "related",
+          "settings": {
+            "title": "You May Also Like",
+            "product_recommendations_limit": 4
+          }
+        },
+        "recent": {
+          "type": "recent",
+          "settings": {
+            "title": "Recently viewed",
+            "product_recently_limit": 4
+          }
+        }
+      },
+      "block_order": [
+        "related",
+        "recent"
+      ],
+      "settings": {
+        "enable_tabs": true,
+        "columns_mobile": "1",
+        "type_style": "subheading-text",
+        "tab_heading_size": 120,
+        "bg_color": "",
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "tabs": {
+      "type": "section-accordions",
+      "blocks": {
+        "acordion-0": {
+          "type": "text",
+          "settings": {
+            "title": "Are AUMI4 items authentic?",
+            "text": "<p><em>Absolutely. Every piece at AUMI4 comes directly from a trusted Italian distributor based in Milan with longstanding ties to the world’s top fashion houses. We personally vet each brand to ensure the highest standards of authenticity and quality—so you can shop with total confidence.<\/em><\/p>"
+          }
+        },
+        "acordion-1": {
+          "type": "text",
+          "settings": {
+            "title": "How long does shipping take?",
+            "text": "<p><em>We strive to ship orders the very same day they’re placed. Most deliveries arrive within 3–4 business days via DHL, thanks to our efficient Milan-based logistics. Our goal is to get your fashion fix to you as quickly and reliably as possible.<\/em><\/p>"
+          }
+        },
+        "acordion-2": {
+          "type": "text",
+          "settings": {
+            "title": "What is AUMI4’s return policy?",
+            "text": "<p><em>We offer a 14-day, no-hassle return and exchange policy. If your purchase doesn’t meet your expectations, simply return it in its original condition and packaging, and we’ll handle the rest. Your satisfaction remains our top priority.<\/em><\/p>"
+          }
+        },
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f": {
+          "type": "text",
+          "settings": {
+            "title": "Which payment processors does AUMI4 use?",
+            "text": "<p><em>All transactions on our website are securely handled through Shopify’s checkout system, with payments processed by Stripe. This ensures top-tier data protection and a seamless, worry-free shopping experience.<\/em><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "acordion-0",
+        "acordion-1",
+        "acordion-2",
+        "d0defd0d-94c3-403c-bd36-dc2f140a104f"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "title": "Frequently Asked Questions",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "overlapping-images-0": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "left",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 60,
+        "image_1": "shopify:\/\/shop_images\/olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_0e59b83f-ad41-48fa-a1cc-48b6cda0759f_2.png",
+        "image_link_1": "",
+        "image_2": "shopify:\/\/shop_images\/olgavas_imagine_Platinum-print_half-body_portrait_Penn_studio_79cbb200-4f0c-42d6-beba-764ffcd87925_3.png",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "title": "<p>Our Story, Our Promise<\/p>",
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#000000",
+        "highlight_text_color": "",
+        "description": "<p>Pioneering AI Fashion! Creating Tomorrow's Trends with AI-Driven Visuals<\/p>",
+        "heading_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "bg_color": "",
+        "gradient": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "38ff978b-66eb-4318-9ce0-94db8ff86311": {
+      "type": "section-columns",
+      "blocks": {
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-0": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_44_906f7caa-23f1-4b62-8c69-ba737f2736f7.png",
+            "title": "Alexander McQueen",
+            "text": "<p>Embrace bold sophistication with Alexander McQueen's avant-garde creations, where cutting-edge fashion meets meticulous craftsmanship. Elevate your style to art.<\/p>",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/alexander-mcqueen",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-1": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_48.png",
+            "title": "Dolce & Gabbana",
+            "text": "<p>Discover the essence of Italian luxury with Dolce & Gabbana’s exquisite craftsmanship, where glamour meets iconic elegance in every design.<\/p>",
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/dolce-gabbana",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        },
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-2": {
+          "type": "text_block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_46.png",
+            "title": "Ferragamo",
+            "text": "<p>Experience the elegance of Salvatore Ferragamo, where timeless Italian craftsmanship meets modern refinement in every piece.<\/p>",
+            "button_text": "SHOP NOW",
+            "button_link": "shopify:\/\/collections\/ferragamo",
+            "button_color": "btn--black",
+            "button_style": "btn--text",
+            "button_size": "btn--small",
+            "video_link_popup": "",
+            "video_link_color": "text-dark"
+          }
+        }
+      },
+      "block_order": [
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-0",
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-1",
+        "template--18952594129217__38ff978b-66eb-4318-9ce0-94db8ff86311-1683126238ada0cf52-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "text-left",
+        "columns": 3,
+        "columns_mobile": "1",
+        "show_images": true,
+        "show_borders": false,
+        "equalize_height": true,
+        "desktop_aspect_ratio": 0.8,
+        "mobile_aspect_ratio": 0.8,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color": "",
+        "gradient": "",
+        "color_borders": "#000000",
+        "layout_mobile": "carousel",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "icons": {
+      "type": "section-icons-row",
+      "blocks": {
+        "icon-0": {
+          "type": "text",
+          "settings": {
+            "icon_name": "truck",
+            "title": "Free Shipping",
+            "text": "<p>on all order over $200<\/p>"
+          }
+        },
+        "icon-1": {
+          "type": "text",
+          "settings": {
+            "icon_name": "check",
+            "title": "Free Returns",
+            "text": "<p>within 14 days of purchase<\/p>"
+          }
+        },
+        "icon-2": {
+          "type": "text",
+          "settings": {
+            "icon_name": "eco-friendly",
+            "title": "Carbon‑neutral shipping",
+            "text": "<p>on every order<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon-0",
+        "icon-1",
+        "icon-2"
+      ],
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "alignment": "center",
+        "columns": 3,
+        "icons_width": 30,
+        "show_vertical_borders": true,
+        "show_top_border": true,
+        "show_bottom_border": true,
+        "heading_size": 120,
+        "text_size": 100,
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "#333333",
+        "box_color": "",
+        "color_border": "#333333",
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--black",
+        "button_style": "btn--solid",
+        "button_size": "btn--small",
+        "layout_mobile": "grid",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "17384203566957bb1d": {
+      "type": "apps",
+      "blocks": {
+        "yotpo_product_reviews_reviews_GRbx4G": {
+          "type": "shopify:\/\/apps\/yotpo-product-reviews\/blocks\/reviews\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "yotpo_product_reviews_reviews_GRbx4G"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "17571702599f2b3a45": {
+      "type": "apps",
+      "blocks": {
+        "categories_category_breadcrumbs_9zThk9": {
+          "type": "shopify:\/\/apps\/categories\/blocks\/category-breadcrumbs\/2d8e3108-b94b-4b0c-8f03-e3726bad87be",
+          "settings": {
+            "override_linktext_colour": false,
+            "linktext_colour": "#0000EE",
+            "separator_colour": "#555555",
+            "producttitle_colour": "#555555",
+            "title_decoration": "",
+            "title_transform": "",
+            "spacing_above": 0,
+            "spacing_below": 0,
+            "sep_plus_class": "breadcrumb__sep_plus5",
+            "separator_char_code": "rsaquo;",
+            "hide_old_breadcrumb": false,
+            "show_catroot": true,
+            "link_catroot": "\/",
+            "text_catroot": "Home",
+            "show_tags": true,
+            "show_finalbread_as_textonly": false,
+            "insert_jsonld": true,
+            "insert_shortlinkfix": false,
+            "prod_multicat_sel": "leastprod",
+            "link_catall": "\/collections\/all",
+            "text_catall": "All Products",
+            "show_product_title": true,
+            "truncate_limit": 0,
+            "prod_ignore_referrer": false,
+            "old_breadcrumb_class": "breadcrumb"
+          }
+        }
+      },
+      "block_order": [
+        "categories_category_breadcrumbs_9zThk9"
+      ],
+      "settings": {
+        "bg_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "17571702599f2b3a45",
+    "main",
+    "related",
+    "tabs",
+    "overlapping-images-0",
+    "38ff978b-66eb-4318-9ce0-94db8ff86311",
+    "icons",
+    "17384203566957bb1d"
+  ]
+}

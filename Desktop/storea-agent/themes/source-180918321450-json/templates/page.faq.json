@@ -1,0 +1,345 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "bg_color": "",
+        "gradient": "",
+        "padding_top": 60,
+        "padding_bottom": 30
+      }
+    },
+    "25dbd963-093c-4cc9-9cd4-7bde32b883ac": {
+      "type": "section-banner-image",
+      "blocks": {
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "<p>Welcome to<\/p>",
+            "size": 100
+          }
+        },
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-1": {
+          "type": "heading",
+          "settings": {
+            "text": "<p>FAQ<\/p>",
+            "size": 180,
+            "heading_highlight_type": "italics",
+            "highlight_color": "rgba(0,0,0,0)",
+            "highlight_text_color": ""
+          }
+        },
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shipping, returns, payments & warranty — clear answers.<\/p>",
+            "size": 100
+          }
+        },
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "stacked_button": false,
+            "button_1_text": "Shop All",
+            "button_1_link": "shopify:\/\/collections\/all",
+            "button_1_color": "btn--white",
+            "button_1_style": "btn--solid-border",
+            "button_1_size": "btn--small",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--black",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--small"
+          }
+        }
+      },
+      "block_order": [
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-0",
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-1",
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-2",
+        "template--18952594030913__25dbd963-093c-4cc9-9cd4-7bde32b883ac-16831285413c69ee80-3"
+      ],
+      "settings": {
+        "height": "one-third-height",
+        "enable_mobile_height": false,
+        "mobile_height": "four-fifty-height-mobile",
+        "image": "shopify:\/\/shop_images\/olgavas_Im_imagine_Macro_fashion_still_Penn_calm_169_head-to-_e9663355-73cf-4d35-82f8-266a632326e1_0.png",
+        "overlay_opacity": 10,
+        "transition": "zoom-out",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "text_width": "normal",
+        "text_position": "center",
+        "text_alignment": "text-left",
+        "text_color": "text-light",
+        "width": "wrapper--full",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "accordion-section-1": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_1_1": {
+          "type": "text",
+          "settings": {
+            "title": "Is my payment data safe with you?",
+            "text": "<p> Yes. Payments are processed through <strong>Shopify Payments, PayPal, and SolanaPay <\/strong>with secure encryption. We don’t store full card details, and your data is handled per our <a href=\"https:\/\/aumifour.com\/pages\/privacy-policy\" title=\"https:\/\/aumifour.com\/pages\/privacy-policy\">Privacy Policy.<\/a><\/p>"
+          }
+        },
+        "accordion_block_1_2": {
+          "type": "text",
+          "settings": {
+            "title": "Do you accept online payments?",
+            "text": "<p>Absolutely. We accept <strong>credit\/debit cards, Shop Pay, PayPal, Apple Pay, Google Pay, and SolanaPay (crypto)<\/strong>. Availability can vary by country.<\/p>"
+          }
+        },
+        "accordion_block_1_3": {
+          "type": "text",
+          "settings": {
+            "title": "Can I pay in installments?",
+            "text": "<p>Where available, <strong>Shop Pay or afterPay Installments <\/strong>can offer 4 interest‑free payments at checkout (subject to eligibility shown at checkout).<\/p>"
+          }
+        },
+        "accordion_block_1_4": {
+          "type": "text",
+          "settings": {
+            "title": "Where can I learn more about billing and taxes?",
+            "text": "<p><a href=\"https:\/\/aumifour.com\/pages\/billing-policy\" title=\"https:\/\/aumifour.com\/pages\/billing-policy\">See our <strong>Billing Policy<\/strong><\/a><strong> <\/strong>for accepted methods, tax calculation at checkout, and how we handle discrepancies.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_1_1",
+        "accordion_block_1_2",
+        "accordion_block_1_3",
+        "accordion_block_1_4"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "title": "Payments & Safety",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "accordion-section-2": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_2_0": {
+          "type": "text",
+          "settings": {
+            "title": "How long does it take to get my products?",
+            "text": "<p>Orders ship <strong>within 5–7 business days <\/strong>after they’re confirmed and processed. You’ll receive tracking by email. <a href=\"https:\/\/aumifour.com\/pages\/shipping-policy\" title=\"https:\/\/aumifour.com\/pages\/shipping-policy\">Shipping Policy<\/a><\/p>"
+          }
+        },
+        "accordion_block_2_1": {
+          "type": "text",
+          "settings": {
+            "title": "How much does it cost?",
+            "text": "<p>Shipping is<strong>free on orders $200 +<\/strong>(standard). Below that, the fee is shown at checkout and depends on destination and order size.<br\/><br\/>Here are the full details of our <a href=\"\/policies\/shipping-policy\" title=\"Shipping Policy\">Shipping Policy<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_2_2": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship to P.O. boxes or military addresses?",
+            "text": "<p>Not at this time.<\/p>"
+          }
+        },
+        "accordion_block_2_3": {
+          "type": "text",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>Yes — we use global carriers like <strong>DHL, FedEx, and Yun Express<\/strong>. Local <strong>customs duties\/taxes may apply <\/strong>and are set by your country.<\/p>"
+          }
+        },
+        "accordion_block_2_4": {
+          "type": "text",
+          "settings": {
+            "title": "Do you  offer FREE Shipping?",
+            "text": "<p>Yes, for orders over $200.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_2_0",
+        "accordion_block_2_1",
+        "accordion_block_2_2",
+        "accordion_block_2_3",
+        "accordion_block_2_4"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "title": "Shipping & Delivery",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "accordion-section-3": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_3_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer warranty for your products?",
+            "text": "<p>Items are covered by any <strong>brand\/manufacturer warranty <\/strong>that comes with the product. AUMI4 itself does not add an extra store warranty beyond your <strong>statutory consumer rights<\/strong>. If something arrives <strong>damaged or incorrect<\/strong>, start a return and we’ll make it right. Refund Policy is <a href=\"https:\/\/aumifour.com\/pages\/refund-return-policy\" title=\"https:\/\/aumifour.com\/pages\/refund-return-policy\">here<\/a> <\/p>"
+          }
+        },
+        "accordion_block_3_1": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer extended warranty?",
+            "text": "<p>We<strong>do not <\/strong>sell extended warranties at this time. For defects or issues on arrival, use the returns process so we can assist.<\/p>"
+          }
+        },
+        "accordion_block_3_2": {
+          "type": "text",
+          "settings": {
+            "title": "How much does extended warranty cost?",
+            "text": "<p> N\/A — we don’t offer extended warranties.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_3_0",
+        "accordion_block_3_1",
+        "accordion_block_3_2"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "title": "Warranty & Repair",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "accordion-section-4": {
+      "type": "section-accordions",
+      "blocks": {
+        "accordion_block_4_0": {
+          "type": "text",
+          "settings": {
+            "title": "Do you offer refunds?",
+            "text": "<p>Yes. You have a<strong>14‑day window from receipt  <\/strong>to request a return. Items must be <strong>unused, unworn, with tags and original packaging<\/strong>, and you’ll need proof of purchase.<strong>Unsolicited returns aren’t accepted<\/strong>— please start in the <a href=\"https:\/\/aumi4.returnscenter.com\/\" title=\"https:\/\/aumi4.returnscenter.com\/\">Returns Center<\/a>.<\/p>"
+          }
+        },
+        "accordion_block_4_1": {
+          "type": "text",
+          "settings": {
+            "title": "How long after I complete a purchase can I ask for a refund?",
+            "text": "<p><strong>Within 14 days of receiving <\/strong>your order. (EU customers also have a<strong>14‑day right of withdrawal<\/strong>.)<\/p>"
+          }
+        },
+        "accordion_block_4_2": {
+          "type": "text",
+          "settings": {
+            "title": "How do I start a return or exchange?",
+            "text": "<p>Use our <a href=\"https:\/\/aumi4.returnscenter.com\/\" title=\"https:\/\/aumi4.returnscenter.com\/\"><strong>Returns Center <\/strong>(link below)<\/a>. It guides you step‑by‑step and shows any label options or fees before you confirm. <strong>Please don’t send items back without a request.<\/strong><\/p>"
+          }
+        },
+        "accordion_block_4_3": {
+          "type": "text",
+          "settings": {
+            "title": "Which items can’t be returned?",
+            "text": "<p>Non‑returnable categories include <strong>perishables, custom items, personal‑care\/beauty items, hazardous materials\/flammables<\/strong>;<strong>gift cards and sale items <\/strong>aren’t returnable.<\/p>"
+          }
+        },
+        "text_BPCcXX": {
+          "type": "text",
+          "settings": {
+            "title": "What if my order had free shipping — who pays if I return?",
+            "text": "<p>If the return is due to an issue on our side, we’ll cover it. Otherwise, <strong>label costs (if any) are shown in the <\/strong><a href=\"https:\/\/aumi4.returnscenter.com\/\" title=\"https:\/\/aumi4.returnscenter.com\/\"><strong>Returns Center<\/strong><\/a><strong> before you submit<\/strong>.<\/p>"
+          }
+        },
+        "accordion_block_4_4": {
+          "type": "text",
+          "settings": {
+            "title": "Who pays the return shipping if my order didn’t have free shipping?",
+            "text": "<p>In cases of <strong>damage\/defect or wrong item<\/strong>, we’ll make it right. For preference‑based returns ,<strong>the Returns Center will show if a label fee applies <\/strong>based on your location and reason.<\/p>"
+          }
+        },
+        "text_yKqpkB": {
+          "type": "text",
+          "settings": {
+            "title": "When will I receive my refund?",
+            "text": "<p>After your return arrives and is approved, refunds are issued to your <strong>original payment method within ~10 business days<\/strong>. Banks can take longer; if it’s been <strong>15 business days <\/strong>since approval, <a href=\"https:\/\/aumifour.com\/pages\/contact-us\" title=\"https:\/\/aumifour.com\/pages\/contact-us\">contact us<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_block_4_0",
+        "accordion_block_4_1",
+        "accordion_block_4_2",
+        "accordion_block_4_3",
+        "text_BPCcXX",
+        "accordion_block_4_4",
+        "text_yKqpkB"
+      ],
+      "settings": {
+        "layout": "two-columns",
+        "show_accordion_divider": false,
+        "line_thickness": "normal",
+        "title": "Returns & Refunds",
+        "type_style": "font-heading",
+        "heading_size": 120,
+        "subheading": "",
+        "text": "",
+        "tabs_bg_color": "#fafafa",
+        "bg_color": "",
+        "gradient": "",
+        "text_color": "text-dark",
+        "border_color": "",
+        "width": "wrapper",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "25dbd963-093c-4cc9-9cd4-7bde32b883ac",
+    "accordion-section-1",
+    "accordion-section-2",
+    "accordion-section-3",
+    "accordion-section-4"
+  ]
+}

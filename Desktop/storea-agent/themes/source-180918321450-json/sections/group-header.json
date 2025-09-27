@@ -1,0 +1,139 @@
+{
+  "type": "header",
+  "name": "Header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>New customers save 5%—Subscribe now!<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_B4KwXz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Spend $200, Ship on Us!<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text_3FFEx9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4 interest-free payments<\/p>",
+            "text_color": "",
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#000000",
+            "highlight_text_color": "",
+            "icon_name": "none",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_url_enabled": false,
+            "target_url": "",
+            "target_referrer_enabled": false,
+            "target_referrer": "",
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-0",
+        "text_B4KwXz",
+        "text_3FFEx9"
+      ],
+      "settings": {
+        "width": "wrapper--full",
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": true,
+        "padding": 10,
+        "slider_speed": 7,
+        "show_arrows": false,
+        "marquee_speed": 100,
+        "direction": "ticker-ltr",
+        "text_caps": false,
+        "type_style": "subheading-text",
+        "text_size": 125,
+        "letter_spacing": 0,
+        "message_spacing": 25,
+        "bg_color": "#ffffff",
+        "gradient": "",
+        "color": "#000000",
+        "border_color": "#000000"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "image-0": {
+          "type": "image",
+          "settings": {
+            "position": "1",
+            "image_second_menu": false,
+            "image": "shopify:\/\/shop_images\/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__39d210de-63e6-4157-b467-3b500776dab7_0.png",
+            "aspect_ratio": 1,
+            "wide_image": true,
+            "title": "",
+            "heading_size": 100,
+            "link_text": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image-0"
+      ],
+      "settings": {
+        "sticky_header": false,
+        "header_border": true,
+        "link_hover_effect": "dot",
+        "logo_not_home": "{{ shop.brand.logo }}",
+        "logo_max_width": 100,
+        "main-menu": "final",
+        "main_menu_secondary": "final-3",
+        "show_images": false,
+        "image_aspect_ratio": 1,
+        "menu_alignment": "left",
+        "header_icons_as_text": false,
+        "highlight_item": "Sale",
+        "enable_custom_badge": false,
+        "custom_badge_text": "10% OFF",
+        "highlight_item_color": "#d02e2e",
+        "header_transparent": false,
+        "header_text_color": "white",
+        "header_gradient": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
