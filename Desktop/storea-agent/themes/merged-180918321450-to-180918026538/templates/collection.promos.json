@@ -1,0 +1,40 @@
+{
+  "sections": {
+    "collection-image-with-title": {
+      "type": "collection-image-with-title",
+      "settings": {}
+    },
+    "subcollections": {
+      "type": "subcollections",
+      "settings": {}
+    },
+    "collection": {
+      "type": "collection",
+      "blocks": {
+        "promo": {
+          "type": "promo",
+          "settings": {}
+        },
+        "promo-0": {
+          "type": "promo",
+          "settings": {}
+        },
+        "promo-1": {
+          "type": "promo",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "promo",
+        "promo-0",
+        "promo-1"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "collection-image-with-title",
+    "subcollections",
+    "collection"
+  ]
+}

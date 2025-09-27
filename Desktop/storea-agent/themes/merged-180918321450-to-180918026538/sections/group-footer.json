@@ -1,0 +1,147 @@
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "logo": {
+          "type": "logo",
+          "settings": {
+            "alignment": "text-left",
+            "logo_width": 100,
+            "show_shop_name": false,
+            "column_width": "20"
+          }
+        },
+        "divider": {
+          "type": "divider",
+          "settings": {
+            "show_border_line": false,
+            "column_width": "20"
+          }
+        },
+        "link": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "footer-2",
+            "title": "Help",
+            "column_width": "15"
+          }
+        },
+        "link-0": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "footer-3",
+            "title": "Company",
+            "column_width": "15"
+          }
+        },
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "alignment": "text-left",
+            "title": "Sign up for offers and get 10% off",
+            "uppercase_heading": true,
+            "heading_size": 160,
+            "text": "<p>Join our newsletter to receive the latest updates and get 10% off your FIRST order.</p>",
+            "button_text": "",
+            "button_color": "btn--white",
+            "button_style": "btn--solid",
+            "column_width": "30"
+          }
+        },
+        "logo_full": {
+          "type": "logo_full",
+          "settings": {
+            "alignment": "text-center",
+            "logo_width": 100,
+            "padding_top": 0
+          }
+        },
+        "footer-block-0": {
+          "type": "text",
+          "settings": {
+            "alignment": "text-left",
+            "title": "Contact us",
+            "footer_text": "<p>Address: AUMI 4 2810 N Church St PMB 32529, Wilmington, Delaware 19802-4447, US</p><p>Email: <a href=\"mailto:support@aumi4.com\">support@aumi4.com</a></p><p>Phone: +1 760-512-8491</p><p>Hours: All week from 9 am to 9 pm</p>",
+            "column_width": "20"
+          }
+        },
+        "footer-block-2": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "about",
+            "title": "Shop",
+            "column_width": "15"
+          }
+        },
+        "footer-block-3": {
+          "type": "link",
+          "settings": {
+            "alignment": "text-left",
+            "menu": "footer",
+            "title": "Helpful Links",
+            "column_width": "15"
+          }
+        },
+        "footer-block-1": {
+          "type": "divider",
+          "settings": {
+            "show_border_line": false,
+            "column_width": "10"
+          }
+        },
+        "footer-block-4": {
+          "type": "newsletter",
+          "settings": {
+            "alignment": "text-left",
+            "title": "Sign up",
+            "uppercase_heading": true,
+            "heading_size": 160,
+            "text": "<p>Subscribe today for 5% OFF your first order – your perfect deal awaits!</p>",
+            "button_text": "Sign up",
+            "button_color": "btn--white",
+            "button_style": "btn--solid",
+            "column_width": "30"
+          }
+        }
+      },
+      "block_order": [
+        "footer-block-0",
+        "footer-block-2",
+        "footer-block-3",
+        "footer-block-1",
+        "footer-block-4"
+      ],
+      "settings": {
+        "show_footer_wave": false,
+        "enable_footer_parallax": true,
+        "increase_border_radius": true,
+        "bottom_bar_alignment": "text-left",
+        "show_social_links": true,
+        "enable_follow_on_shop": true,
+        "show_payment_icons": true,
+        "enable_greyscale": false,
+        "bottom_menu": "",
+        "color_text": "#ffffff",
+        "color_border": "#ffffff",
+        "show_locale_selector": true,
+        "show_locale_code": true,
+        "show_country_selector": true,
+        "show_country_name": false,
+        "show_country_flag": false,
+        "width": "wrapper",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "color_bg": "#000000"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

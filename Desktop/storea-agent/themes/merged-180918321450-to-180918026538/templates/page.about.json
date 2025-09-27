@@ -1,0 +1,309 @@
+{
+  "sections": {
+    "section-overlapping-images": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "right",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 125,
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>Our mission is to <em>empower people</em> through sustainable fashion. We want everyone to <em>look and feel good</em>, while also doing our part to help the environment.</p>",
+        "heading_size": 80,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#e6caca",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "description": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--primary btn--small",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "color_scheme": "",
+        "animation": "vertical",
+        "animation_intensity": 20,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-marquee": {
+      "type": "section-marquee",
+      "blocks": {
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Slow fashion</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "smile",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Effortless silhouettes</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "zap",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        },
+        "text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Natural fabrics</p>",
+            "text_color": "",
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "icon_name": "heart",
+            "icon_color": "",
+            "icon_width": 20,
+            "target_device_enabled": false,
+            "target_device": "mobile"
+          }
+        }
+      },
+      "block_order": [
+        "text",
+        "text-0",
+        "text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "marquee",
+        "show_top_border": false,
+        "show_bottom_border": false,
+        "padding": 15,
+        "marquee_speed": 75,
+        "direction": "ticker-rtl",
+        "slider_speed": 7,
+        "show_arrows": false,
+        "text_caps": false,
+        "type_font": "space_mono_n4",
+        "text_size": 150,
+        "text_size_mobile": 80,
+        "letter_spacing": 0,
+        "message_spacing": 25,
+        "color_scheme": "",
+        "color": "#ffffff",
+        "border_color": "#000000",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "section-overlapping-images-0": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "left",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 125,
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>We believe that fashion should be stylish, affordable and <em>accessible to everyone</em>. Body positivity and inclusivity are values that are at the <em>heart of our brand</em>.</p>",
+        "heading_size": 80,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#e6caca",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "description": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--primary btn--small",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "color_scheme": "",
+        "animation": "horizontal",
+        "animation_intensity": 50,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-overlapping-images-1": {
+      "type": "section-overlapping-images",
+      "settings": {
+        "text_position": "right",
+        "text_alignment": "left",
+        "images_width": 750,
+        "images_offset": 125,
+        "image_link_1": "",
+        "image_link_2": "",
+        "hide_image_2": false,
+        "subheading": "",
+        "title": "<p>We are committed to creating high quality pieces. We believe in fair trade and <em>supporting the workers</em> who make our clothing.</p>",
+        "heading_size": 80,
+        "heading_highlight_type": "underline-hand-drawn",
+        "highlight_color": "#e6caca",
+        "highlight_text_color": "rgba(0,0,0,0)",
+        "description": "",
+        "text_size": 100,
+        "button_text": "",
+        "button_link": "",
+        "button_color": "btn--primary",
+        "button_style": "btn--primary btn--small",
+        "button_size": "btn--small",
+        "video_text": "",
+        "video_link": "",
+        "color_scheme": "",
+        "animation": "vertical",
+        "animation_intensity": 20,
+        "width": "wrapper--full-padded",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-text": {
+      "type": "section-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "text": "<p><a href=\"/pages/contact\" title=\"Contact\"><em>Say hello!</em></a></p>",
+            "size": 300,
+            "heading_highlight_type": "underline-hand-drawn",
+            "highlight_color": "#e6caca",
+            "highlight_text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "text_position": "center",
+        "color_scheme": "scheme-7",
+        "width": "wrapper--narrow",
+        "padding_top": 60,
+        "padding_bottom": 80
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "color_scheme": "",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "section-slideshow": {
+      "type": "section-slideshow",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "overlay_type": "disabled",
+            "video_link_bg": "",
+            "content_width": 80,
+            "text_position": "center",
+            "text_alignment": "text-center",
+            "subheading": "",
+            "title": "",
+            "heading_size": 150,
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "text": "",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--large",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--white",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--large",
+            "video_text": "",
+            "video_link": ""
+          }
+        },
+        "image-0": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "overlay_type": "disabled",
+            "video_link_bg": "",
+            "content_width": 80,
+            "text_position": "center",
+            "text_alignment": "text-center",
+            "subheading": "",
+            "title": "<p>Welcome to Palo Alto</p>",
+            "heading_size": 150,
+            "heading_highlight_type": "circle",
+            "highlight_color": "#d43747",
+            "highlight_text_color": "#000000",
+            "text": "Add more info or delete this text",
+            "text_size": 100,
+            "stacked_button": false,
+            "button_1_text": "Shop All",
+            "button_1_color": "btn--black",
+            "button_1_style": "btn--solid",
+            "button_1_size": "btn--large",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_color": "btn--white",
+            "button_2_style": "btn--solid",
+            "button_2_size": "btn--large",
+            "video_text": "",
+            "video_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "image-0"
+      ],
+      "settings": {
+        "slide_height": "six-fifty-height",
+        "enable_mobile_height": true,
+        "mobile_slide_height": "four-fifty-height-mobile",
+        "show_nav_dots": true,
+        "show_nav_arrows": true,
+        "show_arrow_down": false,
+        "autoplay": false,
+        "duration": 4,
+        "transition": "fade",
+        "enable_zoom_animation": true,
+        "enable_card_scrolling": false,
+        "increase_border_radius": true,
+        "color_scheme": ""
+      }
+    }
+  },
+  "order": [
+    "section-overlapping-images",
+    "section-marquee",
+    "section-overlapping-images-0",
+    "section-overlapping-images-1",
+    "section-text",
+    "main-page",
+    "section-slideshow"
+  ]
+}
