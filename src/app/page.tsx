@@ -16,17 +16,38 @@ export default function Home() {
 
   const allItems = useMemo<MediaItem[]>(() => {
     const videoBase = process.env.NEXT_PUBLIC_VIDEO_BASE_URL?.replace(/\/$/, "");
+    const imageBase = process.env.NEXT_PUBLIC_IMAGE_BASE_URL?.replace(/\/$/, "");
     const getFileName = (p: string) => p.split("/").pop() || p;
-    return collections.flatMap(c =>
+    const items = collections.flatMap(c =>
       c.items.map((it) => {
         if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
           const file = getFileName(it.src);
           // Prefer external base when provided; otherwise keep original path under /visuals/videos
-          return videoBase ? ({ ...it, src: `${videoBase}/${file}` } as MediaItem) : it;
+          // Encode to support spaces and punctuation in filenames when hosted on R2
+          return videoBase ? ({ ...it, src: `${videoBase}/${encodeURIComponent(file)}` } as MediaItem) : it;
+        }
+        if (it.type === "image" && it.src.startsWith("/visuals/")) {
+          // When images are mirrored to R2 under the same folder structure, allow overriding the base
+          if (imageBase) {
+            const withoutLeadingSlash = it.src.replace(/^\//, "");
+            const encodedPath = withoutLeadingSlash.split("/").map(encodeURIComponent).join("/");
+            return { ...it, src: `${imageBase}/${encodedPath}` } as MediaItem;
+          }
         }
         return it;
       })
     );
+
+    // Prioritize newest additions (2026 images and newly added videos)
+    const isNewVideo = (id: string) => /^Generated File /.test(id);
+    const isNew = (m: MediaItem) => m.collectionId === "2026" || (m.type === "video" && isNewVideo(m.id));
+    return items.slice().sort((a, b) => {
+      const aNew = isNew(a);
+      const bNew = isNew(b);
+      if (aNew && !bNew) return -1;
+      if (!aNew && bNew) return 1;
+      return 0;
+    });
   }, []);
 
   const normalized = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
@@ -98,7 +119,7 @@ export default function Home() {
         </p>
       </section>
 
-      <FilterBar onChange={setFilter} chips={["All","Videos","Korean Photography","Summer 2025"]} />
+      <FilterBar onChange={setFilter} chips={["All","2026","Videos","Korean Photography","Summer 2025"]} />
 
       <section id="work" className="mt-6">
         <Masonry

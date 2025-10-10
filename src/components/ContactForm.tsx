@@ -25,17 +25,15 @@ export default function ContactForm() {
         body: JSON.stringify({ name, email, message }),
       });
       const data = await res.json();
-      if (!res.ok) throw new Error(data?.error || "Failed to send");
+      if (!res.ok) throw new Error(data?.error || res.statusText || "Failed to send");
       setStatus("sent");
       setName(""); setEmail(""); setMessage("");
     } catch (err: any) {
       setStatus("error");
       const msg = String(err?.message || "Failed to send");
       setError(msg);
-      // Graceful fallback: open user's mail client if server email isn't configured
-      if (msg.toLowerCase().includes("server email not configured") || msg.toLowerCase().includes("resend")) {
-        try { location.href = mailto; } catch {}
-      }
+      // Graceful fallback: open user's mail client on any failure
+      try { location.href = mailto; } catch {}
     }
   }
 
@@ -78,7 +76,7 @@ export default function ContactForm() {
           {status === "sending" ? "Sending…" : status === "sent" ? "Sent ✓" : "Send"}
         </button>
         <a href={mailto} className="rounded-md border px-4 py-2">Email directly</a>
-        {status === "error" && <span className="text-sm text-red-600">{error}</span>}
+        {status === "error" && <span className="text-sm text-red-600">{error} — opening your email app…</span>}
         {status === "sent" && <span className="text-sm text-green-700">Thanks — I’ll reply shortly.</span>}
       </div>
     </form>

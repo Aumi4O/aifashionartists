@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "cf:build": "next build && npx @cloudflare/next-on-pages"
+    "cf:build": "next build && npx @cloudflare/next-on-pages",
+    "send:test": "node scripts/send-test-email.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
