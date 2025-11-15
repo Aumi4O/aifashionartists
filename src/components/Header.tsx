@@ -28,6 +28,7 @@ export default function Header() {
           Olga Vasilevsky
         </Link>
         <nav className="flex items-center gap-4">
+          <Link href="/offer" className="hover:opacity-70">Offer</Link>
           <Link href="/about" className="hover:opacity-70">About</Link>
           <Link href="/contact" className="hover:opacity-70">Contact</Link>
         </nav>

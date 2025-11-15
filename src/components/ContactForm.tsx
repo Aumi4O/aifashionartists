@@ -11,7 +11,7 @@ export default function ContactForm() {
   const mailto = useMemo(() => {
     const subject = encodeURIComponent("Project Inquiry — AUMI4");
     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
-    return `mailto:olga@aifashionartists.com?subject=${subject}&body=${body}`;
+    return `mailto:partner@aifashionartists.com?subject=${subject}&body=${body}`;
   }, [name, email, message]);
 
   async function onSubmit(e: React.FormEvent) {

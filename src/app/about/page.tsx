@@ -101,7 +101,7 @@ export default function About() {
         <h2 id="cta-h2">Let’s Make Images That Move Product</h2>
         <p>
           If you’re launching a collection, scaling paid spend, or refreshing your site, I’ll deliver art‑direction‑level
-          visuals that are fast, consistent, and on brand. Email: <a className="underline" href="mailto:olga@aifashionartists.com">olga@aifashionartists.com</a>.
+          visuals that are fast, consistent, and on brand. Email: <a className="underline" href="mailto:partner@aifashionartists.com">partner@aifashionartists.com</a>.
         </p>
         <p>
           <strong>Priority</strong> is given to launch‑critical briefs and premium retainer partners.

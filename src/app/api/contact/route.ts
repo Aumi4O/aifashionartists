@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         from,
-        to: ["olga@aifashionartists.com"],
+        to: ["partner@aifashionartists.com"],
         reply_to: email,
         subject: `New inquiry from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
