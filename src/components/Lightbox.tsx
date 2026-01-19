@@ -81,7 +81,6 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 preload="auto"
                 controlsList="nodownload noplaybackrate"
                 disablePictureInPicture
-                crossOrigin="anonymous"
                 onContextMenu={(e) => e.preventDefault()}
                 onError={(e) => {
                   const el = e.currentTarget;
