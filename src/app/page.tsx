@@ -38,8 +38,8 @@ export default function Home() {
       })
     );
 
-    // Priority order: commercials first (best work), then portraits, story, story-video, vision-2026, then rest
-    const priorityOrder = ["commercials", "portraits", "story", "story-video", "vision-2026"];
+    // Priority order: commercials first (best work, above the fold), then vision-2026, story/story-video, portraits, then rest
+    const priorityOrder = ["commercials", "vision-2026", "story", "story-video", "portraits"];
     return items.slice().sort((a, b) => {
       const aIdx = priorityOrder.indexOf(a.collectionId);
       const bIdx = priorityOrder.indexOf(b.collectionId);
@@ -118,7 +118,7 @@ export default function Home() {
         </p>
       </section>
 
-      <FilterBar onChange={setFilter} chips={["All","Commercials","Portraits","Story","Vision 2026","Videos","Korean Photography"]} />
+      <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos"]} />
 
       <section id="work" className="mt-6">
         <Masonry
