@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import type { MediaItem } from "@/data/collections";
@@ -11,15 +11,9 @@ type LightboxProps = {
 
 export default function Lightbox({ item, onClose }: LightboxProps) {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [isMuted, setIsMuted] = useState(true);
   
-  // Check if this is a commercial or story video (has sound)
-  const hasSound = item?.collectionId === "commercials" || item?.collectionId === "story-video";
-
   useEffect(() => {
     if (!item) return;
-    // Reset muted state when opening a new item - start muted for autoplay
-    setIsMuted(true);
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
@@ -47,14 +41,6 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
     tryPlay();
     return () => el.removeEventListener("canplay", onCanPlay);
   }, [item]);
-
-  const toggleMute = () => {
-    const el = videoRef.current;
-    if (el) {
-      el.muted = !el.muted;
-      setIsMuted(el.muted);
-    }
-  };
 
   return (
     <AnimatePresence>
@@ -90,7 +76,6 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
                 poster={item.poster}
                 controls
                 autoPlay
-                muted={isMuted}
                 playsInline
                 webkit-playsinline
                 preload="auto"
@@ -127,34 +112,6 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
               />
             )}
 
-            {/* Sound toggle button for commercials and story videos */}
-            {item.type === "video" && hasSound && (
-              <button
-                onClick={toggleMute}
-                className="absolute top-2 left-2 rounded-full bg-white/90 text-black px-3 py-1.5 text-sm hover:bg-white flex items-center gap-1.5 font-medium"
-                aria-label={isMuted ? "Unmute" : "Mute"}
-              >
-                {isMuted ? (
-                  <>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                      <line x1="23" y1="9" x2="17" y2="15"/>
-                      <line x1="17" y1="9" x2="23" y2="15"/>
-                    </svg>
-                    Sound
-                  </>
-                ) : (
-                  <>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
-                      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
-                    </svg>
-                    Sound On
-                  </>
-                )}
-              </button>
-            )}
-
             <button
               onClick={onClose}
               className="absolute top-2 right-2 rounded-full bg-white/90 text-black px-3 py-1 text-sm hover:bg-white"
@@ -168,5 +125,3 @@ export default function Lightbox({ item, onClose }: LightboxProps) {
     </AnimatePresence>
   );
 }
-
-
