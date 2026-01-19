@@ -88,14 +88,20 @@ export function MasonryCard({ data, index }: RenderComponentProps<MediaItem>) {
       {isVideo ? (
         <video
           ref={videoRef}
-          className="w-full h-auto bg-black"
+          className="w-full h-auto bg-black min-h-[200px]"
           src={data.src}
           data-src-original={data.src}
           poster={data.poster}
-          muted playsInline webkit-playsinline preload="metadata" autoPlay loop
-          onMouseEnter={(e)=> e.currentTarget.play()}
+          muted playsInline webkit-playsinline preload="auto" autoPlay loop
+          onMouseEnter={(e)=> { e.currentTarget.play().catch(()=>{}); }}
           onMouseLeave={(e)=> { e.currentTarget.pause(); e.currentTarget.currentTime = 0; }}
           onError={(e)=> handleVideoError(e.currentTarget)}
+          onLoadedData={(e) => {
+            // Try to play when video data is loaded
+            if (e.currentTarget.paused) {
+              e.currentTarget.play().catch(()=>{});
+            }
+          }}
           controls={false}
           controlsList="nodownload noplaybackrate"
           disablePictureInPicture
