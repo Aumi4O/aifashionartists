@@ -17,20 +17,20 @@ export default function Home() {
   const allItems = useMemo<MediaItem[]>(() => {
     const videoBase = process.env.NEXT_PUBLIC_VIDEO_BASE_URL?.replace(/\/$/, "");
     const imageBase = process.env.NEXT_PUBLIC_IMAGE_BASE_URL?.replace(/\/$/, "");
-    const getFileName = (p: string) => p.split("/").pop() || p;
     const items = collections.flatMap(c =>
       c.items.map((it) => {
         if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
-          const file = getFileName(it.src);
-          // Prefer external base when provided; otherwise keep original path under /visuals/videos
-          // Encode to support spaces and punctuation in filenames when hosted on R2
-          return videoBase ? ({ ...it, src: `${videoBase}/${encodeURIComponent(file)}` } as MediaItem) : it;
+          // Extract the path after /visuals/videos/ and encode each segment
+          const relativePath = it.src.replace("/visuals/videos/", "");
+          const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
+          // Prefer external base when provided; otherwise keep original path
+          return videoBase ? ({ ...it, src: `${videoBase}/${encodedPath}` } as MediaItem) : it;
         }
-        if (it.type === "image" && it.src.startsWith("/visuals/")) {
-          // When images are mirrored to R2 under the same folder structure, allow overriding the base
+        if (it.type === "image" && it.src.startsWith("/visuals/images/")) {
+          // Images are stored in R2 under /images/ folder
           if (imageBase) {
-            const withoutLeadingSlash = it.src.replace(/^\//, "");
-            const encodedPath = withoutLeadingSlash.split("/").map(encodeURIComponent).join("/");
+            const relativePath = it.src.replace("/visuals/images/", "");
+            const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
             return { ...it, src: `${imageBase}/${encodedPath}` } as MediaItem;
           }
         }
@@ -38,15 +38,14 @@ export default function Home() {
       })
     );
 
-    // Prioritize newest additions (2026 images and newly added videos)
-    const isNewVideo = (id: string) => /^Generated File /.test(id);
-    const isNew = (m: MediaItem) => m.collectionId === "2026" || (m.type === "video" && isNewVideo(m.id));
+    // Priority order: commercials first (best work), then portraits, story, story-video, vision-2026, then rest
+    const priorityOrder = ["commercials", "portraits", "story", "story-video", "vision-2026"];
     return items.slice().sort((a, b) => {
-      const aNew = isNew(a);
-      const bNew = isNew(b);
-      if (aNew && !bNew) return -1;
-      if (!aNew && bNew) return 1;
-      return 0;
+      const aIdx = priorityOrder.indexOf(a.collectionId);
+      const bIdx = priorityOrder.indexOf(b.collectionId);
+      const aPriority = aIdx === -1 ? 999 : aIdx;
+      const bPriority = bIdx === -1 ? 999 : bIdx;
+      return aPriority - bPriority;
     });
   }, []);
 
@@ -119,7 +118,7 @@ export default function Home() {
         </p>
       </section>
 
-      <FilterBar onChange={setFilter} chips={["All","2026","Videos","Korean Photography","Summer 2025"]} />
+      <FilterBar onChange={setFilter} chips={["All","Commercials","Portraits","Story","Vision 2026","Videos","Korean Photography"]} />
 
       <section id="work" className="mt-6">
         <Masonry

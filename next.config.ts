@@ -15,6 +15,17 @@ const nextConfig: NextConfig = {
   images: {
     // Cloudflare Pages serves static assets well; disable Next's image optimizer to avoid 404s
     unoptimized: true,
+    // Allow R2 bucket domains for images
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.r2.dev',
+      },
+      {
+        protocol: 'https',
+        hostname: 'pub-*.r2.dev',
+      },
+    ],
   },
 };
 
