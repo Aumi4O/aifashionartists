@@ -587,7 +587,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Macro_portrait_Penn_still-life_discipline_mee_d7e239c4-5390-4b0d-82b0-ff20bb35dd5c_2.png",
         "collectionId": "fashion-portrets-2",
         "type": "image",
-        "src": "/visuals/fashion-portrets-2/olgavas_imagine_Macro_portrait_Penn_still-life_discipline_mee_d7e239c4-5390-4b0d-82b0-ff20bb35dd5c_2.png",
+        "src": "/visuals/fashion portrets 2/olgavas_imagine_Macro_portrait_Penn_still-life_discipline_mee_d7e239c4-5390-4b0d-82b0-ff20bb35dd5c_2.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Macro portrait Penn still-life discipline mee d7e239c4-5390-4b0d-82b0-ff20bb35dd5c 2"
@@ -596,7 +596,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Macro_portrait_chin-to-sternum_Dior_silk_twil_b2b73c91-dbc4-46ee-91aa-1894387f0e3b_0.png",
         "collectionId": "fashion-portrets-2",
         "type": "image",
-        "src": "/visuals/fashion-portrets-2/olgavas_imagine_Macro_portrait_chin-to-sternum_Dior_silk_twil_b2b73c91-dbc4-46ee-91aa-1894387f0e3b_0.png",
+        "src": "/visuals/fashion portrets 2/olgavas_imagine_Macro_portrait_chin-to-sternum_Dior_silk_twil_b2b73c91-dbc4-46ee-91aa-1894387f0e3b_0.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Macro portrait chin-to-sternum Dior silk twil b2b73c91-dbc4-46ee-91aa-1894387f0e3b 0"
@@ -605,7 +605,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_bust_portrait_Celine_FW25_baro_588d160b-5e7b-4cfb-928a-345feb9605b5_3.png",
         "collectionId": "fashion-portrets-2",
         "type": "image",
-        "src": "/visuals/fashion-portrets-2/olgavas_imagine_Platinum-print_bust_portrait_Celine_FW25_baro_588d160b-5e7b-4cfb-928a-345feb9605b5_3.png",
+        "src": "/visuals/fashion portrets 2/olgavas_imagine_Platinum-print_bust_portrait_Celine_FW25_baro_588d160b-5e7b-4cfb-928a-345feb9605b5_3.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Platinum-print bust portrait Celine FW25 baro 588d160b-5e7b-4cfb-928a-345feb9605b5 3"
@@ -620,7 +620,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__39d210de-63e6-4157-b467-3b500776dab7_0.png",
         "collectionId": "fashion-portrets-3",
         "type": "image",
-        "src": "/visuals/fashion-portrets-3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__39d210de-63e6-4157-b467-3b500776dab7_0.png",
+        "src": "/visuals/fashion portrets 3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__39d210de-63e6-4157-b467-3b500776dab7_0.png",
         "w": 1456,
         "h": 816,
         "title": "olgavas imagine Macro fashion still Irving-Penn serenity 169  39d210de-63e6-4157-b467-3b500776dab7 0"
@@ -629,7 +629,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_0.png",
         "collectionId": "fashion-portrets-3",
         "type": "image",
-        "src": "/visuals/fashion-portrets-3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_0.png",
+        "src": "/visuals/fashion portrets 3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_0.png",
         "w": 1456,
         "h": 816,
         "title": "olgavas imagine Macro fashion still Irving-Penn serenity 169  d8bf2d97-b96e-4386-b400-b07beca919d9 0"
@@ -638,7 +638,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_3.png",
         "collectionId": "fashion-portrets-3",
         "type": "image",
-        "src": "/visuals/fashion-portrets-3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_3.png",
+        "src": "/visuals/fashion portrets 3/olgavas_imagine_Macro_fashion_still_Irving-Penn_serenity_169__d8bf2d97-b96e-4386-b400-b07beca919d9_3.png",
         "w": 1456,
         "h": 816,
         "title": "olgavas imagine Macro fashion still Irving-Penn serenity 169  d8bf2d97-b96e-4386-b400-b07beca919d9 3"
@@ -647,7 +647,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_7c269375-9da7-4a46-8840-c4debac87af5_1.png",
         "collectionId": "fashion-portrets-3",
         "type": "image",
-        "src": "/visuals/fashion-portrets-3/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_7c269375-9da7-4a46-8840-c4debac87af5_1.png",
+        "src": "/visuals/fashion portrets 3/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_7c269375-9da7-4a46-8840-c4debac87af5_1.png",
         "w": 1456,
         "h": 816,
         "title": "olgavas imagine Waist-level macro studio still Penn style pow 7c269375-9da7-4a46-8840-c4debac87af5 1"
@@ -656,7 +656,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_86c324da-d035-4644-9507-2c504b874aa3_3.png",
         "collectionId": "fashion-portrets-3",
         "type": "image",
-        "src": "/visuals/fashion-portrets-3/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_86c324da-d035-4644-9507-2c504b874aa3_3.png",
+        "src": "/visuals/fashion portrets 3/olgavas_imagine_Waist-level_macro_studio_still_Penn_style_pow_86c324da-d035-4644-9507-2c504b874aa3_3.png",
         "w": 1456,
         "h": 816,
         "title": "olgavas imagine Waist-level macro studio still Penn style pow 86c324da-d035-4644-9507-2c504b874aa3 3"
@@ -671,7 +671,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_close-crop_Prada_2025_neutral__8b373c32-42ca-4962-85d3-0bf8ecb7f146_1.png",
         "collectionId": "fashion-portrets-horizontal",
         "type": "image",
-        "src": "/visuals/fashion-portrets-horizontal/olgavas_imagine_Platinum-print_close-crop_Prada_2025_neutral__8b373c32-42ca-4962-85d3-0bf8ecb7f146_1.png",
+        "src": "/visuals/fashion portrets horizontal/olgavas_imagine_Platinum-print_close-crop_Prada_2025_neutral__8b373c32-42ca-4962-85d3-0bf8ecb7f146_1.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Platinum-print close-crop Prada 2025 neutral  8b373c32-42ca-4962-85d3-0bf8ecb7f146 1"
@@ -680,7 +680,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_close-crop_Prada_Summer_2025_n_8883ec81-dc9e-48dd-ac43-45509cd7e92e_2.png",
         "collectionId": "fashion-portrets-horizontal",
         "type": "image",
-        "src": "/visuals/fashion-portrets-horizontal/olgavas_imagine_Platinum-print_close-crop_Prada_Summer_2025_n_8883ec81-dc9e-48dd-ac43-45509cd7e92e_2.png",
+        "src": "/visuals/fashion portrets horizontal/olgavas_imagine_Platinum-print_close-crop_Prada_Summer_2025_n_8883ec81-dc9e-48dd-ac43-45509cd7e92e_2.png",
         "w": 896,
         "h": 1344,
         "title": "olgavas imagine Platinum-print close-crop Prada Summer 2025 n 8883ec81-dc9e-48dd-ac43-45509cd7e92e 2"
@@ -689,7 +689,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_c3ea87de-3c0d-485b-8d0f-884d5d01982f_2.png",
         "collectionId": "fashion-portrets-horizontal",
         "type": "image",
-        "src": "/visuals/fashion-portrets-horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_c3ea87de-3c0d-485b-8d0f-884d5d01982f_2.png",
+        "src": "/visuals/fashion portrets horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_c3ea87de-3c0d-485b-8d0f-884d5d01982f_2.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Platinum-print half-body Miu Miu rose-dust co c3ea87de-3c0d-485b-8d0f-884d5d01982f 2"
@@ -698,7 +698,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_2.png",
         "collectionId": "fashion-portrets-horizontal",
         "type": "image",
-        "src": "/visuals/fashion-portrets-horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_2.png",
+        "src": "/visuals/fashion portrets horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_2.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Platinum-print half-body Miu Miu rose-dust co ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20 2"
@@ -707,7 +707,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_3.png",
         "collectionId": "fashion-portrets-horizontal",
         "type": "image",
-        "src": "/visuals/fashion-portrets-horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_3.png",
+        "src": "/visuals/fashion portrets horizontal/olgavas_imagine_Platinum-print_half-body_Miu_Miu_rose-dust_co_ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20_3.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Platinum-print half-body Miu Miu rose-dust co ceed2d2d-bad2-4a2c-b8a5-9ae2a5028c20 3"
@@ -833,7 +833,7 @@ export const collections: Collection[] = [
         "id": "olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
+        "src": "/visuals/korean photography wall art /olgavas_ethereal_Korean_model_in_sapphire-blue_hanbok_with_pa_f41b2022-06ef-4a31-9de9-efe91822a091_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas ethereal Korean model in sapphire-blue hanbok with pa f41b2022-06ef-4a31-9de9-efe91822a091 0"
@@ -842,7 +842,7 @@ export const collections: Collection[] = [
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
+        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_02d1a57d-9a59-494b-a8b6-f83c1edefefb_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 02d1a57d-9a59-494b-a8b6-f83c1edefefb 0"
@@ -851,7 +851,7 @@ export const collections: Collection[] = [
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
+        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_2abb8ead-b452-476a-a997-6911c5d9c288_2.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 2abb8ead-b452-476a-a997-6911c5d9c288 2"
@@ -860,7 +860,7 @@ export const collections: Collection[] = [
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
+        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_0.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 0"
@@ -869,7 +869,7 @@ export const collections: Collection[] = [
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
+        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_1.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 1"
@@ -878,7 +878,7 @@ export const collections: Collection[] = [
         "id": "olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
         "collectionId": "korean-photography-wall-art",
         "type": "image",
-        "src": "/visuals/korean-photography-wall-art/olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
+        "src": "/visuals/korean photography wall art /olgavas_portrait_of_a_Korean_girl_in_hanbok_with_moon_jar_Kim_75c36939-3b07-4972-835a-e8c4ed40a9b6_3.png",
         "w": 960,
         "h": 1200,
         "title": "olgavas portrait of a Korean girl in hanbok with moon jar Kim 75c36939-3b07-4972-835a-e8c4ed40a9b6 3"
@@ -893,7 +893,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_0e59b83f-ad41-48fa-a1cc-48b6cda0759f_2.png",
         "collectionId": "summer-2025",
         "type": "image",
-        "src": "/visuals/summer-2025/olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_0e59b83f-ad41-48fa-a1cc-48b6cda0759f_2.png",
+        "src": "/visuals/Summer 2025/olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_0e59b83f-ad41-48fa-a1cc-48b6cda0759f_2.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Three-quarter portrait Penn-inflected discipl 0e59b83f-ad41-48fa-a1cc-48b6cda0759f 2"
@@ -902,7 +902,7 @@ export const collections: Collection[] = [
         "id": "olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_7951eaf1-986c-4b4d-ba43-0f82cb2f6ca5_0.png",
         "collectionId": "summer-2025",
         "type": "image",
-        "src": "/visuals/summer-2025/olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_7951eaf1-986c-4b4d-ba43-0f82cb2f6ca5_0.png",
+        "src": "/visuals/Summer 2025/olgavas_imagine_Three-quarter_portrait_Penn-inflected_discipl_7951eaf1-986c-4b4d-ba43-0f82cb2f6ca5_0.png",
         "w": 816,
         "h": 1456,
         "title": "olgavas imagine Three-quarter portrait Penn-inflected discipl 7951eaf1-986c-4b4d-ba43-0f82cb2f6ca5 0"
