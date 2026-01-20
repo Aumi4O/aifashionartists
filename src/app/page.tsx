@@ -20,9 +20,15 @@ export default function Home() {
     const items = collections.flatMap(c =>
       c.items.map((it) => {
         if (it.type === "video" && it.src.startsWith("/visuals/")) {
-          // Handle all videos under /visuals/ (videos/, Commercials /, story video/)
           if (videoBase) {
-            const relativePath = it.src.replace("/visuals/", "");
+            // Old videos: /visuals/videos/file.mp4 -> videoBase/file.mp4 (videos folder is the base)
+            // New videos: /visuals/Commercials /file.mp4 -> videoBase/Commercials /file.mp4
+            // New videos: /visuals/story video/file.mp4 -> videoBase/story video/file.mp4
+            let relativePath = it.src.replace("/visuals/", "");
+            // Old videos have "videos/" prefix which matches the R2 root, so remove it
+            if (relativePath.startsWith("videos/")) {
+              relativePath = relativePath.replace("videos/", "");
+            }
             const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
             return { ...it, src: `${videoBase}/${encodedPath}` } as MediaItem;
           }
