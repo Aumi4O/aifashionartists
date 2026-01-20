@@ -28,10 +28,10 @@ export default function Home() {
           }
         }
         if (it.type === "image" && it.src.startsWith("/visuals/")) {
-          // When images are mirrored to R2 under the same folder structure, allow overriding the base
+          // Images: /visuals/folder/file.png -> imageBase/folder/file.png
           if (imageBase) {
-            const withoutLeadingSlash = it.src.replace(/^\//, "");
-            const encodedPath = withoutLeadingSlash.split("/").map(encodeURIComponent).join("/");
+            const relativePath = it.src.replace("/visuals/", "");
+            const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
             return { ...it, src: `${imageBase}/${encodedPath}` } as MediaItem;
           }
         }
