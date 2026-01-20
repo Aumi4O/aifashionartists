@@ -19,18 +19,19 @@ export default function Home() {
     const imageBase = process.env.NEXT_PUBLIC_IMAGE_BASE_URL?.replace(/\/$/, "");
     const items = collections.flatMap(c =>
       c.items.map((it) => {
-        if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
-          // Extract the path after /visuals/videos/ and encode each segment
-          const relativePath = it.src.replace("/visuals/videos/", "");
-          const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
-          // Prefer external base when provided; otherwise keep original path
-          return videoBase ? ({ ...it, src: `${videoBase}/${encodedPath}` } as MediaItem) : it;
-        }
-        if (it.type === "image" && it.src.startsWith("/visuals/images/")) {
-          // Images are stored in R2 under /images/ folder
-          if (imageBase) {
-            const relativePath = it.src.replace("/visuals/images/", "");
+        if (it.type === "video" && it.src.startsWith("/visuals/")) {
+          // Handle all videos under /visuals/ (videos/, Commercials /, story video/)
+          if (videoBase) {
+            const relativePath = it.src.replace("/visuals/", "");
             const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
+            return { ...it, src: `${videoBase}/${encodedPath}` } as MediaItem;
+          }
+        }
+        if (it.type === "image" && it.src.startsWith("/visuals/")) {
+          // When images are mirrored to R2 under the same folder structure, allow overriding the base
+          if (imageBase) {
+            const withoutLeadingSlash = it.src.replace(/^\//, "");
+            const encodedPath = withoutLeadingSlash.split("/").map(encodeURIComponent).join("/");
             return { ...it, src: `${imageBase}/${encodedPath}` } as MediaItem;
           }
         }
@@ -38,11 +39,11 @@ export default function Home() {
       })
     );
 
-    // Priority order: commercials first (best work, above the fold), then vision-2026, story/story-video, portraits, then rest
-    const priorityOrder = ["commercials", "vision-2026", "story", "story-video", "portraits"];
+    // Order: Commercials first (above fold), then Vision 2026, Story, Story Video, Portraits, then old site
+    const collectionOrder = ["commercials", "vision-2026", "story", "story-video", "portraits", "2026", "Love", "Poster", "blues", "breathtaking", "fashion-portrets-2", "fashion-portrets-3", "fashion-portrets-horizontal", "grangy", "korean photography wall art ", "korean-photography-wall-art", "summer-2025", "videos"];
     return items.slice().sort((a, b) => {
-      const aIdx = priorityOrder.indexOf(a.collectionId);
-      const bIdx = priorityOrder.indexOf(b.collectionId);
+      const aIdx = collectionOrder.indexOf(a.collectionId);
+      const bIdx = collectionOrder.indexOf(b.collectionId);
       const aPriority = aIdx === -1 ? 999 : aIdx;
       const bPriority = bIdx === -1 ? 999 : bIdx;
       return aPriority - bPriority;
@@ -56,6 +57,8 @@ export default function Home() {
   const aliasMap: Record<string, string> = {
     // Map friendly chip labels to concrete collection ids/titles
     "korean photography": "korean-photography-wall-art",
+    "vision 2026": "vision-2026",
+    "story video": "story-video",
   };
 
   const filtered = useMemo(() => {
@@ -67,17 +70,21 @@ export default function Home() {
     return allItems;
   }, [allItems, filter]);
 
-  // Distribute videos throughout the feed instead of clustering at the end
+  // Keep commercials at top, distribute other videos throughout
   const arranged = useMemo<MediaItem[]>(() => {
-    // Only interleave for the all-items view. Other filters keep natural order.
+    // Only rearrange for the all-items view. Other filters keep natural order.
     if (filter !== "All") return filtered;
 
-    const images = filtered.filter(i => i.type === "image");
-    const videos = filtered.filter(i => i.type === "video");
-    if (videos.length === 0) return filtered;
+    // Commercials stay at top (above the fold)
+    const commercials = filtered.filter(i => i.collectionId === "commercials");
+    const rest = filtered.filter(i => i.collectionId !== "commercials");
+    
+    const images = rest.filter(i => i.type === "image");
+    const videos = rest.filter(i => i.type === "video");
+    if (videos.length === 0) return [...commercials, ...rest];
 
-    // Evenly spread videos by inserting one after every `step` images
-    const step = Math.max(2, Math.floor(images.length / (videos.length + 1)));
+    // Evenly spread non-commercial videos among images
+    const step = Math.max(4, Math.floor(images.length / (videos.length + 1)));
     const result: MediaItem[] = [];
     let imgIdx = 0;
     let vidIdx = 0;
@@ -90,13 +97,11 @@ export default function Home() {
         result.push(videos[vidIdx++]);
       }
     }
-    // If any videos remain, tuck them in near the end spaced by one image where possible
-    let insertAt = Math.max(0, result.length - 1);
+    // If any videos remain, add at end
     while (vidIdx < videos.length) {
-      result.splice(Math.min(insertAt, result.length), 0, videos[vidIdx++]);
-      insertAt = Math.max(0, insertAt - 2);
+      result.push(videos[vidIdx++]);
     }
-    return result;
+    return [...commercials, ...result];
   }, [filtered, filter]);
 
   // Listen for media:open events from cards
@@ -118,7 +123,7 @@ export default function Home() {
         </p>
       </section>
 
-      <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos"]} />
+      <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos","2026","Korean Photography","Summer 2025"]} />
 
       <section id="work" className="mt-6">
         <Masonry
