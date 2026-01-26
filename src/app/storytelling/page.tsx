@@ -6,7 +6,7 @@ import KineticHeading from "@/components/KineticHeading";
 import { MasonryCard } from "@/components/masonry-card";
 import Lightbox from "@/components/Lightbox";
 import type { MediaItem } from "@/data/collections";
-import { getJapanItems, featuredJapanImages } from "@/data/japan-collection";
+import { getJapanItems } from "@/data/japan-collection";
 
 // masonic relies on ResizeObserver; disable SSR to avoid server-side reference errors
 const Masonry = dynamic(() => import("masonic").then(m => m.Masonry), { ssr: false }) as any;
