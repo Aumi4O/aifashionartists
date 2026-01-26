@@ -1,7 +1,12 @@
 # Cloudflare Pages Functions config (used by next-on-pages)
 # Ensures Node.js compatibility APIs are available at runtime
+name = "aifashionartists"
 compatibility_date = "2025-09-16"
 compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".vercel/output/static"
+
+[vars]
+NODE_VERSION = "20"
 
 
 
