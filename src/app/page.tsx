@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 import KineticHeading from "@/components/KineticHeading";
 import FilterBar from "@/components/FilterBar";
 import { collections, type MediaItem } from "@/data/collections";
@@ -127,6 +128,19 @@ export default function Home() {
         <p className="mt-3 text-sm text-neutral-600 max-w-[60ch]">
           A living portfolio by Olga Vasilevsky. Fashion-inflected portraiture, color-blocked architecture, and video studies.
         </p>
+        
+        {/* Category buttons */}
+        <div className="mt-6 flex gap-3">
+          <span className="px-4 py-2 border border-neutral-900 bg-neutral-900 text-white text-sm">
+            Fashion
+          </span>
+          <Link 
+            href="/storytelling" 
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Storytelling
+          </Link>
+        </div>
       </section>
 
       <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos","2026","Korean Photography","Summer 2025"]} />

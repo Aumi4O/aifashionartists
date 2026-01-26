@@ -416,22 +416,22 @@ export const collections: Collection[] = [
         "title": "olgavas Lobby elevator opens bone-white silk-gabardine coat p ff43c8da-e6c9-4dd7-8263-d9421e2a84e1 3"
       },
       {
-        "id": "olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd29a1399_1.png",
+        "id": "olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd9a1399_1.png",
         "collectionId": "Love",
         "type": "image",
-        "src": "/visuals/Love/olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd29a1399_1.png",
+        "src": "/visuals/Love/olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd9a1399_1.png",
         "w": 816,
         "h": 1456,
-        "title": "olgavas Riverside caf in light rain Penn still-life poetics   cd248d49-3e26-4e7e-9777-9c0bd29a1399 1"
+        "title": "olgavas Riverside caf in light rain Penn still-life poetics   cd248d49-3e26-4e7e-9777-9c0bd9a1399 1"
       },
       {
-        "id": "olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd29a1399_3.png",
+        "id": "olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd9a1399_3.png",
         "collectionId": "Love",
         "type": "image",
-        "src": "/visuals/Love/olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd29a1399_3.png",
+        "src": "/visuals/Love/olgavas_Riverside_caf_in_light_rain_Penn_still-life_poetics___cd248d49-3e26-4e7e-9777-9c0bd9a1399_3.png",
         "w": 816,
         "h": 1456,
-        "title": "olgavas Riverside caf in light rain Penn still-life poetics   cd248d49-3e26-4e7e-9777-9c0bd29a1399 3"
+        "title": "olgavas Riverside caf in light rain Penn still-life poetics   cd248d49-3e26-4e7e-9777-9c0bd9a1399 3"
       }
     ]
   },
