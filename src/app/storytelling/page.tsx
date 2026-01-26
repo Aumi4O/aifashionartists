@@ -81,10 +81,27 @@ export default function StorytellingPage() {
           </div>
         )}
 
-        {/* Row 2: Three portraits (9:16) side by side */}
+        {/* Row 2: Second landscape (coastal city) - full width, same size as first */}
+        {landscapes[1] && (
+          <div
+            className="relative cursor-pointer overflow-hidden group"
+            onClick={() => handleImageClick(landscapes[1])}
+          >
+            <Image
+              src={landscapes[1].src}
+              alt={landscapes[1].title || ""}
+              width={landscapes[1].w}
+              height={landscapes[1].h}
+              className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+              priority
+            />
+          </div>
+        )}
+
+        {/* Row 3: Two portraits (9:16) side by side */}
         {portraits.length > 0 && (
-          <div className="grid grid-cols-3 gap-3">
-            {portraits.slice(0, 3).map((item) => (
+          <div className="grid grid-cols-2 gap-3">
+            {portraits.slice(0, 2).map((item) => (
               <div
                 key={item.id}
                 className="relative cursor-pointer overflow-hidden group"
@@ -103,10 +120,10 @@ export default function StorytellingPage() {
           </div>
         )}
 
-        {/* Row 3: Two more landscapes (16:9) side by side */}
-        {landscapes.length > 1 && (
+        {/* Row 4: Two more landscapes (16:9) side by side */}
+        {landscapes.length > 2 && (
           <div className="grid grid-cols-2 gap-3">
-            {landscapes.slice(1, 3).map((item) => (
+            {landscapes.slice(2, 4).map((item) => (
               <div
                 key={item.id}
                 className="relative cursor-pointer overflow-hidden group"
