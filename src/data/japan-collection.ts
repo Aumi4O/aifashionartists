@@ -1,13 +1,13 @@
 import type { MediaItem } from "./collections";
 
-// Featured images that go above the fold (the 6 you specified)
+// Featured images that go above the fold (the 6 you specified, in your requested order)
 export const featuredJapanImages = [
-  "aifashioartists_sunlit_documentary_street_portrait_in_Japan_c_283b3591-6795-4e55-add9-034ccac7a423_1.png",
-  "aifashioartists_sunlit_documentary_street_portrait_in_Japan_c_802aacbc-a37a-4e1c-850a-2ba54451f53f_3.png",
-  "aifashioartists_photorealistic_documentary_film_still_contemp_47fda7b6-c1c0-4fce-97dd-dffe222e7b5f_2.png",
-  "aifashioartists_sunlit_documentary_realism_bright_natural_day_7422fbab-ea40-4fe9-b572-8e9708b51ca7_2.png",
-  "aifashioartists_photorealistic_documentary_film_still_contemp_9f270ce1-53d9-4bac-8d5e-1da56af8708f_0.png",
   "aifashioartists_photorealistic_documentary_film_still_contemp_a2c28332-1d11-4fa3-8c7d-320803dff5c6_0.png",
+  "aifashioartists_photorealistic_documentary_film_still_contemp_47fda7b6-c1c0-4fce-97dd-dffe222e7b5f_2.png",
+  "aifashioartists_photorealistic_documentary_film_still_contemp_9f270ce1-53d9-4bac-8d5e-1da56af8708f_0.png",
+  "aifashioartists_sunlit_documentary_realism_bright_natural_day_7422fbab-ea40-4fe9-b572-8e9708b51ca7_2.png",
+  "aifashioartists_sunlit_documentary_street_portrait_in_Japan_c_802aacbc-a37a-4e1c-850a-2ba54451f53f_3.png",
+  "aifashioartists_sunlit_documentary_street_portrait_in_Japan_c_283b3591-6795-4e55-add9-034ccac7a423_1.png",
 ];
 
 // All Japan storytelling images

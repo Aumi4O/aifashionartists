@@ -21,10 +21,6 @@ export default function StorytellingPage() {
   // Split into featured (first 6) and rest
   const featuredItems = allItems.slice(0, 6);
   const restItems = allItems.slice(6);
-  
-  // Separate featured into portraits and landscapes for hero layout
-  const heroPortraits = featuredItems.filter(item => item.h > item.w);
-  const heroLandscapes = featuredItems.filter(item => item.w > item.h);
 
   const handleImageClick = (item: MediaItem) => {
     setActive(item);
@@ -64,49 +60,25 @@ export default function StorytellingPage() {
 
       {/* Hero Section - Featured Images Above the Fold */}
       <section className="mt-10">
-        {/* Row 1: Portrait images side by side */}
-        {heroPortraits.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mb-3">
-            {heroPortraits.map((item) => (
-              <div
-                key={item.id}
-                className="relative aspect-[9/16] cursor-pointer overflow-hidden group"
-                onClick={() => handleImageClick(item)}
-              >
-                <Image
-                  src={item.src}
-                  alt={item.title || ""}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                  priority
-                />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Row 2: Landscape images - full width for better 16:9 display */}
-        {heroLandscapes.length > 0 && (
-          <div className="space-y-3">
-            {heroLandscapes.map((item) => (
-              <div
-                key={item.id}
-                className="relative aspect-video cursor-pointer overflow-hidden group"
-                onClick={() => handleImageClick(item)}
-              >
-                <Image
-                  src={item.src}
-                  alt={item.title || ""}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  sizes="100vw"
-                  priority
-                />
-              </div>
-            ))}
-          </div>
-        )}
+        {/* All featured images in a grid - no cropping */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {featuredItems.map((item) => (
+            <div
+              key={item.id}
+              className="relative cursor-pointer overflow-hidden group"
+              onClick={() => handleImageClick(item)}
+            >
+              <Image
+                src={item.src}
+                alt={item.title || ""}
+                width={item.w}
+                height={item.h}
+                className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                priority
+              />
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Rest of the gallery in masonry layout */}
