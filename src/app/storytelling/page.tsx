@@ -21,6 +21,10 @@ export default function StorytellingPage() {
   // Split into featured (first 6) and rest
   const featuredItems = allItems.slice(0, 6);
   const restItems = allItems.slice(6);
+  
+  // Separate by orientation for custom layout
+  const landscapes = featuredItems.filter(item => item.w > item.h);
+  const portraits = featuredItems.filter(item => item.h > item.w);
 
   const handleImageClick = (item: MediaItem) => {
     setActive(item);
@@ -59,26 +63,67 @@ export default function StorytellingPage() {
       </section>
 
       {/* Hero Section - Featured Images Above the Fold */}
-      <section className="mt-10">
-        {/* All featured images in a grid - no cropping */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-          {featuredItems.map((item) => (
-            <div
-              key={item.id}
-              className="relative cursor-pointer overflow-hidden group"
-              onClick={() => handleImageClick(item)}
-            >
-              <Image
-                src={item.src}
-                alt={item.title || ""}
-                width={item.w}
-                height={item.h}
-                className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
-                priority
-              />
-            </div>
-          ))}
-        </div>
+      <section className="mt-10 space-y-3">
+        {/* Row 1: First landscape (16:9) - full width */}
+        {landscapes[0] && (
+          <div
+            className="relative cursor-pointer overflow-hidden group"
+            onClick={() => handleImageClick(landscapes[0])}
+          >
+            <Image
+              src={landscapes[0].src}
+              alt={landscapes[0].title || ""}
+              width={landscapes[0].w}
+              height={landscapes[0].h}
+              className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+              priority
+            />
+          </div>
+        )}
+
+        {/* Row 2: Three portraits (9:16) side by side */}
+        {portraits.length > 0 && (
+          <div className="grid grid-cols-3 gap-3">
+            {portraits.slice(0, 3).map((item) => (
+              <div
+                key={item.id}
+                className="relative cursor-pointer overflow-hidden group"
+                onClick={() => handleImageClick(item)}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title || ""}
+                  width={item.w}
+                  height={item.h}
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* Row 3: Two more landscapes (16:9) side by side */}
+        {landscapes.length > 1 && (
+          <div className="grid grid-cols-2 gap-3">
+            {landscapes.slice(1, 3).map((item) => (
+              <div
+                key={item.id}
+                className="relative cursor-pointer overflow-hidden group"
+                onClick={() => handleImageClick(item)}
+              >
+                <Image
+                  src={item.src}
+                  alt={item.title || ""}
+                  width={item.w}
+                  height={item.h}
+                  className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                  priority
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </section>
 
       {/* Rest of the gallery in masonry layout */}
