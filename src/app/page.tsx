@@ -20,24 +20,17 @@ export default function Home() {
     const imageBase = process.env.NEXT_PUBLIC_IMAGE_BASE_URL?.replace(/\/$/, "");
     const items = collections.flatMap(c =>
       c.items.map((it) => {
-        if (it.type === "video" && it.src.startsWith("/visuals/")) {
-          if (videoBase) {
-            // Old videos: /visuals/videos/file.mp4 -> videoBase/file.mp4 (videos folder is the base)
-            // New videos: /visuals/Commercials /file.mp4 -> videoBase/Commercials /file.mp4
-            // New videos: /visuals/story video/file.mp4 -> videoBase/story video/file.mp4
-            let relativePath = it.src.replace("/visuals/", "");
-            // Old videos have "videos/" prefix which matches the R2 root, so remove it
-            if (relativePath.startsWith("videos/")) {
-              relativePath = relativePath.replace("videos/", "");
-            }
-            const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
-            return { ...it, src: `${videoBase}/${encodedPath}` } as MediaItem;
-          }
+        if (it.type === "video" && it.src.startsWith("/visuals/videos/")) {
+          // Extract the path after /visuals/videos/ and encode each segment
+          const relativePath = it.src.replace("/visuals/videos/", "");
+          const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
+          // Prefer external base when provided; otherwise keep original path
+          return videoBase ? ({ ...it, src: `${videoBase}/${encodedPath}` } as MediaItem) : it;
         }
-        if (it.type === "image" && it.src.startsWith("/visuals/")) {
-          // Images: /visuals/folder/file.png -> imageBase/folder/file.png
+        if (it.type === "image" && it.src.startsWith("/visuals/images/")) {
+          // Images are stored in R2 under /images/ folder
           if (imageBase) {
-            const relativePath = it.src.replace("/visuals/", "");
+            const relativePath = it.src.replace("/visuals/images/", "");
             const encodedPath = relativePath.split("/").map(encodeURIComponent).join("/");
             return { ...it, src: `${imageBase}/${encodedPath}` } as MediaItem;
           }
@@ -46,11 +39,11 @@ export default function Home() {
       })
     );
 
-    // Order: Commercials first (above fold), then Vision 2026, Story, Story Video, Portraits, then old site
-    const collectionOrder = ["commercials", "vision-2026", "story", "story-video", "portraits", "2026", "Love", "Poster", "blues", "breathtaking", "fashion-portrets-2", "fashion-portrets-3", "fashion-portrets-horizontal", "grangy", "korean photography wall art ", "korean-photography-wall-art", "summer-2025", "videos"];
+    // Priority order: commercials first (best work, above the fold), then vision-2026, story/story-video, portraits, then rest
+    const priorityOrder = ["commercials", "vision-2026", "story", "story-video", "portraits"];
     return items.slice().sort((a, b) => {
-      const aIdx = collectionOrder.indexOf(a.collectionId);
-      const bIdx = collectionOrder.indexOf(b.collectionId);
+      const aIdx = priorityOrder.indexOf(a.collectionId);
+      const bIdx = priorityOrder.indexOf(b.collectionId);
       const aPriority = aIdx === -1 ? 999 : aIdx;
       const bPriority = bIdx === -1 ? 999 : bIdx;
       return aPriority - bPriority;
@@ -64,8 +57,6 @@ export default function Home() {
   const aliasMap: Record<string, string> = {
     // Map friendly chip labels to concrete collection ids/titles
     "korean photography": "korean-photography-wall-art",
-    "vision 2026": "vision-2026",
-    "story video": "story-video",
   };
 
   const filtered = useMemo(() => {
@@ -77,21 +68,17 @@ export default function Home() {
     return allItems;
   }, [allItems, filter]);
 
-  // Keep commercials at top, distribute other videos throughout
+  // Distribute videos throughout the feed instead of clustering at the end
   const arranged = useMemo<MediaItem[]>(() => {
-    // Only rearrange for the all-items view. Other filters keep natural order.
+    // Only interleave for the all-items view. Other filters keep natural order.
     if (filter !== "All") return filtered;
 
-    // Commercials stay at top (above the fold)
-    const commercials = filtered.filter(i => i.collectionId === "commercials");
-    const rest = filtered.filter(i => i.collectionId !== "commercials");
-    
-    const images = rest.filter(i => i.type === "image");
-    const videos = rest.filter(i => i.type === "video");
-    if (videos.length === 0) return [...commercials, ...rest];
+    const images = filtered.filter(i => i.type === "image");
+    const videos = filtered.filter(i => i.type === "video");
+    if (videos.length === 0) return filtered;
 
-    // Evenly spread non-commercial videos among images
-    const step = Math.max(4, Math.floor(images.length / (videos.length + 1)));
+    // Evenly spread videos by inserting one after every `step` images
+    const step = Math.max(2, Math.floor(images.length / (videos.length + 1)));
     const result: MediaItem[] = [];
     let imgIdx = 0;
     let vidIdx = 0;
@@ -104,11 +91,13 @@ export default function Home() {
         result.push(videos[vidIdx++]);
       }
     }
-    // If any videos remain, add at end
+    // If any videos remain, tuck them in near the end spaced by one image where possible
+    let insertAt = Math.max(0, result.length - 1);
     while (vidIdx < videos.length) {
-      result.push(videos[vidIdx++]);
+      result.splice(Math.min(insertAt, result.length), 0, videos[vidIdx++]);
+      insertAt = Math.max(0, insertAt - 2);
     }
-    return [...commercials, ...result];
+    return result;
   }, [filtered, filter]);
 
   // Listen for media:open events from cards
@@ -143,7 +132,7 @@ export default function Home() {
         </div>
       </section>
 
-      <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos","2026","Korean Photography","Summer 2025"]} />
+      <FilterBar onChange={setFilter} chips={["All","Commercials","Vision 2026","Story","Portraits","Videos"]} />
 
       <section id="work" className="mt-6">
         <Masonry

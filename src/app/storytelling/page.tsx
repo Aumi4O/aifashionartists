@@ -2,6 +2,7 @@
 import { useEffect, useState, useMemo } from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 import KineticHeading from "@/components/KineticHeading";
 import { MasonryCard } from "@/components/masonry-card";
 import Lightbox from "@/components/Lightbox";
@@ -42,10 +43,23 @@ export default function StorytellingPage() {
   return (
     <main className="container mx-auto px-4 pb-20 2xl:max-w-[1600px]">
       <section className="pt-10 md:pt-16">
-        <KineticHeading text="Storytelling" />
+        <KineticHeading text="Selected Works" />
         <p className="mt-3 text-sm text-neutral-600 max-w-[60ch]">
           Visual narratives and cinematic moments. A journey through light, shadow, and emotion.
         </p>
+        
+        {/* Category buttons */}
+        <div className="mt-6 flex gap-3">
+          <Link 
+            href="/" 
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Fashion
+          </Link>
+          <span className="px-4 py-2 border border-neutral-900 bg-neutral-900 text-white text-sm">
+            Storytelling
+          </span>
+        </div>
       </section>
 
       {/* Hero Section - Featured Images Above the Fold */}
