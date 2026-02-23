@@ -1,5 +1,5 @@
 "use client";
-import { useMemo, useRef, useEffect, useState } from "react";
+import { useMemo, useRef, useEffect } from "react";
 import Link from "next/link";
 import KineticHeading from "@/components/KineticHeading";
 
@@ -14,27 +14,13 @@ const movieItem = {
 
 const FILENAME = "The Secret Life of Needles.mp4";
 
-const getVideoUrls = () => {
-  const r2Base = process.env.NEXT_PUBLIC_R2_BASE_URL?.replace(/\/$/, "");
-  const videoBase = process.env.NEXT_PUBLIC_VIDEO_BASE_URL?.replace(/\/$/, "");
-  const encoded = encodeURIComponent(FILENAME);
-  const urls: string[] = [];
-  if (r2Base) urls.push(`${r2Base}/movie/${encoded}`);
-  if (videoBase) urls.push(`${videoBase}/movie/${encoded}`);
-  return urls;
-};
-
 export default function MoviePage() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const [urlIndex, setUrlIndex] = useState(0);
-  const videoUrls = useMemo(getVideoUrls, []);
-  const videoSrc = videoUrls[urlIndex] ?? "";
-
-  const handleVideoError = () => {
-    if (urlIndex < videoUrls.length - 1) {
-      setUrlIndex((i) => i + 1);
-    }
-  };
+  const videoSrc = useMemo(() => {
+    const r2Base = process.env.NEXT_PUBLIC_R2_BASE_URL?.replace(/\/$/, "");
+    if (!r2Base) return "";
+    return `${r2Base}/movie/${encodeURIComponent(FILENAME)}`;
+  }, []);
 
   useEffect(() => {
     const el = videoRef.current;
@@ -85,7 +71,6 @@ export default function MoviePage() {
         </h2>
         <div className="relative mx-auto max-w-[360px] overflow-hidden rounded-2xl bg-neutral-900 aspect-[9/16]">
           <video
-            key={videoSrc}
             ref={videoRef}
             className="w-full h-full object-contain"
             src={videoSrc}
@@ -95,7 +80,6 @@ export default function MoviePage() {
             preload="auto"
             controlsList="nodownload"
             disablePictureInPicture
-            onError={handleVideoError}
           />
         </div>
       </section>
