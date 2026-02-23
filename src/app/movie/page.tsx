@@ -17,9 +17,9 @@ const FILENAME = "The Secret Life of Needles.mp4";
 export default function MoviePage() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
   const videoSrc = useMemo(() => {
-    const r2Base = process.env.NEXT_PUBLIC_R2_BASE_URL?.replace(/\/$/, "");
-    if (!r2Base) return "";
-    return `${r2Base}/movie/${encodeURIComponent(FILENAME)}`;
+    const movieBase = process.env.NEXT_PUBLIC_MOVIE_BASE_URL?.replace(/\/$/, "");
+    if (!movieBase) return "";
+    return `${movieBase}/movie/${encodeURIComponent(FILENAME)}`;
   }, []);
 
   useEffect(() => {
