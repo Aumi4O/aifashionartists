@@ -140,6 +140,12 @@ export default function Home() {
           >
             Storytelling
           </Link>
+          <Link 
+            href="/movie" 
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Movie
+          </Link>
         </div>
       </section>
 

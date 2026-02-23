@@ -59,6 +59,12 @@ export default function StorytellingPage() {
           <span className="px-4 py-2 border border-neutral-900 bg-neutral-900 text-white text-sm">
             Storytelling
           </span>
+          <Link 
+            href="/movie" 
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Movie
+          </Link>
         </div>
       </section>
 
