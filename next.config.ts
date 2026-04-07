@@ -4,6 +4,14 @@ import path from "path";
 const nextConfig: NextConfig = {
   // Constrain file tracing to the project directory
   outputFileTracingRoot: path.resolve(process.cwd()),
+  async rewrites() {
+    return [
+      {
+        source: '/web-design',
+        destination: '/web-design/index.html',
+      },
+    ];
+  },
   eslint: {
     // Allow Cloudflare Pages build to pass without blocking on lint errors
     ignoreDuringBuilds: true,
