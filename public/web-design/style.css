@@ -1,0 +1,465 @@
+/* ── RESET & BASE ── */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --blue: #0019FF;
+  --blue-light: #4060FF;
+  --bg: #F0EDE8;
+  --bg-arch: #D6E4EE;
+  --text: #1A1A1A;
+  --text-light: #6B6B6B;
+  --mono: 'SF Mono', 'Fira Code', 'Courier New', monospace;
+  --sans: 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+::selection { background: var(--blue); color: #fff; }
+
+/* ── TYPOGRAPHY ── */
+h2 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+p {
+  font-size: clamp(0.85rem, 1.2vw, 1rem);
+  line-height: 1.6;
+  color: var(--text-light);
+  max-width: 40ch;
+}
+
+.label-tag {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--blue);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ── HERO ── */
+#hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+#heroCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hero-brand {
+  font-family: var(--mono);
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  letter-spacing: 0.3em;
+  color: var(--blue);
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeUp 1s 0.3s ease forwards;
+}
+
+.hero-tagline {
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 200;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  text-align: center;
+  opacity: 0;
+  animation: fadeUp 1s 0.6s ease forwards;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeUp 1s 1.2s ease forwards;
+}
+
+.hero-scroll svg {
+  animation: bob 2s ease-in-out infinite;
+}
+
+/* Hero person — SVG silhouette */
+.hero-person {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  animation: fadeIn 2s 1s ease forwards, gentleSway 4s 3s ease-in-out infinite;
+}
+
+.hero-person img {
+  width: auto;
+  height: clamp(160px, 24vh, 280px);
+  display: block;
+  mix-blend-mode: multiply;
+}
+
+@keyframes gentleSway {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-3px); }
+}
+
+/* ── WALKING GROUP PEOPLE ── */
+.walkers-group .person-walker {
+  position: absolute;
+  bottom: 0;
+  animation: walkBob 1.2s ease-in-out infinite;
+}
+
+.walkers-group .person-walker img {
+  mix-blend-mode: darken;
+}
+
+.walkers-group .person-walker.facing-left img {
+  transform: scaleX(-1);
+}
+
+@keyframes walkBob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+/* ── NETWORK SECTION ── */
+#network {
+  position: relative;
+  min-height: 100vh;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+#networkCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#network .section-label {
+  position: absolute;
+  top: 6%;
+  left: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.node-info {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 2.5rem;
+  max-width: 400px;
+  z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.node-info.visible {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: all;
+}
+
+.node-info-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+}
+
+.node-info-desc {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.node-info-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-light);
+  line-height: 1;
+}
+
+/* ── MANIFESTO ── */
+#manifesto {
+  position: relative;
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  padding: 8rem 5%;
+}
+
+.manifesto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  width: 100%;
+  align-items: center;
+}
+
+.manifesto-left h2 {
+  margin-bottom: 1.5rem;
+}
+
+.manifesto-left p {
+  margin-bottom: 1rem;
+}
+
+.manifesto-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.manifesto-item {
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ccc;
+  transform: translateX(-20px);
+  opacity: 0;
+  transition: all 0.5s ease;
+  cursor: default;
+}
+
+.manifesto-item.revealed {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.manifesto-item:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+  padding-left: 1rem;
+}
+
+.manifesto-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blue-circle {
+  width: clamp(250px, 30vw, 450px);
+  height: clamp(250px, 30vw, 450px);
+  background: var(--blue);
+  border-radius: 50%;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.blue-circle:hover {
+  transform: scale(1.08);
+}
+
+.blue-circle.clicked {
+  animation: circleClick 0.6s ease;
+}
+
+@keyframes circleClick {
+  0% { transform: scale(1); }
+  30% { transform: scale(0.92); }
+  60% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ── ARCHITECTURE ── */
+#architecture {
+  position: relative;
+  min-height: 100vh;
+  background: var(--bg-arch);
+  overflow: hidden;
+}
+
+#archCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.arch-overlay {
+  position: relative;
+  z-index: 2;
+  padding: 6rem 5%;
+  pointer-events: none;
+}
+
+.arch-header { margin-bottom: 2rem; }
+
+.arch-text {
+  max-width: 500px;
+  margin-bottom: 3rem;
+}
+
+.arch-stats {
+  display: flex;
+  gap: 4rem;
+  pointer-events: all;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 200;
+  color: var(--blue);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+/* Walking people group in architecture */
+.walkers-group {
+  position: absolute;
+  bottom: 8%;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+/* ── FOOTER ── */
+#footer {
+  background: var(--text);
+  color: #fff;
+  padding: 4rem 5% 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-brand {
+  font-family: var(--mono);
+  font-size: 1.2rem;
+  letter-spacing: 0.2em;
+  color: var(--blue-light);
+  margin-bottom: 1rem;
+}
+
+.footer-heading {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.footer-col a {
+  display: block;
+  color: #999;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s;
+}
+
+.footer-col a:hover { color: #fff; }
+
+.footer-col p {
+  color: #666;
+  max-width: none;
+}
+
+.footer-line {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .manifesto-grid { grid-template-columns: 1fr; }
+  .manifesto-right { order: -1; }
+  .blue-circle { width: 200px; height: 200px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .arch-stats { flex-direction: column; gap: 2rem; }
+}

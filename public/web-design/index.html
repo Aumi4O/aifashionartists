@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DCIP-LA — Digital Cultural Infrastructure Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO — above the fold, single walking person -->
+<section id="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-overlay">
+    <div class="hero-brand">DCIP·LA</div>
+    <div class="hero-tagline">Digital Cultural<br>Infrastructure Platform</div>
+    <div class="hero-scroll">
+      <span>Explore</span>
+      <svg width="20" height="20" viewBox="0 0 20 20"><path d="M10 3v14M4 11l6 6 6-6" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+    </div>
+  </div>
+  <!-- Single person — injected from people.js -->
+  <div class="hero-person" id="heroPerson"></div>
+</section>
+
+<!-- NETWORK SECTION — interactive node graph -->
+<section id="network">
+  <canvas id="networkCanvas"></canvas>
+  <div class="section-label">
+    <span class="label-tag">001</span>
+    <h2>Connected Systems</h2>
+    <p>A living network of cultural infrastructure nodes — click to explore connections.</p>
+  </div>
+  <div id="nodeInfo" class="node-info hidden">
+    <div class="node-info-title"></div>
+    <div class="node-info-desc"></div>
+    <button class="node-info-close">&times;</button>
+  </div>
+</section>
+
+<!-- MANIFESTO — text with blue circle -->
+<section id="manifesto">
+  <div class="manifesto-grid">
+    <div class="manifesto-left">
+      <span class="label-tag">002</span>
+      <h2>Open<br>Infrastructure</h2>
+      <p>DCIP-LA builds shared digital systems for museums, galleries, archives and cultural organizations across Los Angeles.</p>
+      <p>We believe cultural data should be connected, accessible, and alive — not siloed in institutional databases.</p>
+      <div class="manifesto-list">
+        <div class="manifesto-item" data-reveal>Collection Management</div>
+        <div class="manifesto-item" data-reveal>Exhibition Planning</div>
+        <div class="manifesto-item" data-reveal>Public Access Portals</div>
+        <div class="manifesto-item" data-reveal>Conservation Records</div>
+        <div class="manifesto-item" data-reveal>Oral History Archives</div>
+        <div class="manifesto-item" data-reveal>Digital Preservation</div>
+      </div>
+    </div>
+    <div class="manifesto-right">
+      <div class="blue-circle" id="blueCircle"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE — blueprint with walking people -->
+<section id="architecture">
+  <canvas id="archCanvas"></canvas>
+  <div class="arch-overlay">
+    <div class="arch-header">
+      <span class="label-tag">003</span>
+      <h2>System Architecture</h2>
+    </div>
+    <div class="arch-text">
+      <p>Our platform connects cultural institutions through a federated data mesh — each node maintains sovereignty while contributing to a shared knowledge graph.</p>
+    </div>
+    <div class="arch-stats">
+      <div class="stat" data-count="47">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Institutions</span>
+      </div>
+      <div class="stat" data-count="2400000">
+        <span class="stat-num">0</span>
+        <span class="stat-label">Records</span>
+      </div>
+      <div class="stat" data-count="128">
+        <span class="stat-num">0</span>
+        <span class="stat-label">API Endpoints</span>
+      </div>
+    </div>
+  </div>
+  <!-- Walking people group -->
+  <div class="walkers-group" id="walkersGroup"></div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">DCIP·LA</div>
+      <p>Digital Cultural Infrastructure Platform<br>Los Angeles, California</p>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Platform</div>
+      <a href="#">API Documentation</a>
+      <a href="#">Data Standards</a>
+      <a href="#">Open Source</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Community</div>
+      <a href="#">Partner Institutions</a>
+      <a href="#">Research Fellows</a>
+      <a href="#">Events</a>
+    </div>
+    <div class="footer-col">
+      <div class="footer-heading">Contact</div>
+      <a href="#">hello@dcip.la</a>
+      <a href="#">GitHub</a>
+    </div>
+  </div>
+  <div class="footer-line">
+    <span>&copy; 2026 DCIP-LA</span>
+    <span>Built with open standards</span>
+  </div>
+</footer>
+
+<script src="people.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
