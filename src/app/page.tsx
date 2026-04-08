@@ -146,6 +146,12 @@ export default function Home() {
           >
             Movie
           </Link>
+          <Link
+            href="/web-design/"
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Concept site
+          </Link>
         </div>
       </section>
 
