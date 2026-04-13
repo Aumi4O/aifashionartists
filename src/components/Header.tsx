@@ -27,7 +27,8 @@ export default function Header() {
         <Link href="/" aria-label="Home" className="select-none inline-flex items-center leading-none font-medium tracking-tight bg-gradient-to-r from-black to-neutral-600 dark:from-white dark:to-neutral-400 bg-clip-text text-transparent text-[18px] md:text-[20px]">
           Olga Vasilevsky
         </Link>
-        <nav className="flex items-center gap-4">
+        <nav className="flex items-center gap-4 flex-wrap justify-end">
+          <Link href="/pricing" className="hover:opacity-70">Pricing</Link>
           <Link href="/offer" className="hover:opacity-70">Offer</Link>
           <Link href="/about" className="hover:opacity-70">About</Link>
           <Link href="/contact" className="hover:opacity-70">Contact</Link>

@@ -1,3 +1,5 @@
+import { BOOK_CALL_URL } from "@/lib/booking";
+
 export const metadata = {
   title: "Offer — Professional Visual Systems | AUMI4",
   description:
@@ -16,7 +18,12 @@ export default function OfferPage() {
           scale—every time.
         </p>
         <div className="flex gap-3 mt-5 flex-wrap">
-          <a className="rounded-md border px-4 py-2" href="mailto:partner@aifashionartists.com">
+          <a
+            className="rounded-md border px-4 py-2"
+            href={BOOK_CALL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Book a Scoping Call
           </a>
           <a className="rounded-md border px-4 py-2" href="#deliverables-pricing">
@@ -105,7 +112,12 @@ export default function OfferPage() {
           creative at scale—and ties it to outcomes you can measure.
         </p>
         <div className="flex gap-3 mt-4">
-          <a className="rounded-md border px-4 py-2" href="mailto:partner@aifashionartists.com">
+          <a
+            className="rounded-md border px-4 py-2"
+            href={BOOK_CALL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Reserve Your Slot
           </a>
         </div>
