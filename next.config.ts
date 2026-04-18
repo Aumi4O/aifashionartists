@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
         source: '/web-design',
         destination: '/web-design/index.html',
       },
+      {
+        source: '/site-design',
+        destination: '/site-design/index.html',
+      },
     ];
   },
   eslint: {
