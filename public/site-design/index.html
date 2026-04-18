@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NYA</title>
+  <meta name="description" content="NYA — a quiet editorial index of trusted curators." />
+  <link rel="preload" as="image" href="assets/img/background.png" />
+  <link rel="preload" as="image" href="assets/img/nya-logo-trim.png" />
+
+  <!-- Editorial webfonts.
+       Cormorant Garamond — quiet, airy editorial serif used for
+         all section titles, category numbers, world-of-NYA tiles.
+       Inter — understated neutral sans for body copy, micro-labels,
+         hairline controls.
+       Preconnect + display=swap for no FOIT and quick repaint. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+  />
+  <link rel="stylesheet" href="styles.css?v=33" />
+</head>
+<body>
+  <main class="page">
+  <!--
+    SECTION 1 — Hero. The whole composition is locked to a 2048 x 1146
+    aspect box (matches the reference mockup), and every element inside
+    uses % offsets derived from the reference anchors so positions stay
+    faithful at any desktop width. The viewport is desktop-first (min 1280px).
+  -->
+  <section class="hero" aria-label="NYA hero">
+    <div class="stage" id="stage">
+
+      <!-- LAYER 1: photographic base plate (warm beige borders, off-white
+           panel, dusty blue sky strip, real cream block + baked shadow,
+           floor plane). Everything else overlays this. -->
+      <img
+        class="layer layer--base"
+        src="assets/img/background.png"
+        alt=""
+        aria-hidden="true"
+        draggable="false"
+      />
+
+      <!--
+        LAYER 2: Sky motion inside the top band.
+        DECISION: we use the provided Kling video, masked to exactly the
+        sky strip of the base plate (top 12.48% of the stage, i.e. the
+        143/1146 band from the reference). A real video gives truer
+        atmospheric movement than CSS clouds and matches the editorial
+        photographic feel of the rest of the scene. We blend it softly so
+        it reads as the same sky as the base plate rather than replacing
+        it. See styles.css -> .sky-video.
+      -->
+      <div class="sky-band" aria-hidden="true">
+        <video
+          class="sky-video"
+          src="assets/media/kling-sky.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          disableRemotePlayback
+        ></video>
+        <!-- Soft feather so the video edge dissolves into the painted sky of the base plate. -->
+        <div class="sky-feather"></div>
+      </div>
+
+      <!--
+        LAYER 3: Moving sunlight / shadow.
+        A very faint dark wedge that drifts horizontally, reinforcing the
+        baked shadow already in the base plate so it reads as a slow sun
+        shift. Kept extremely subtle on purpose.
+      -->
+      <div class="sun-shadow" aria-hidden="true"></div>
+
+      <!--
+        LAYER 4: Header UI — thin hairline rules, utility controls left,
+        centered NYA logo, search/account controls right. All hairlines
+        are 1px and sit at the horizontal line visible in the reference.
+      -->
+      <header class="head" aria-label="primary">
+        <div class="rule rule--left"></div>
+        <div class="rule rule--right"></div>
+
+        <div class="head-left">
+          <button class="icon-btn" aria-label="menu">
+            <span class="burger"><span></span><span></span><span></span></span>
+            <span class="micro">menu</span>
+          </button>
+          <button class="icon-btn" aria-label="search">
+            <span class="micro">search</span>
+            <span class="field"></span>
+          </button>
+        </div>
+
+        <a class="brand" href="#" aria-label="NYA home">
+          <img src="assets/img/nya-logo-trim.png" alt="NYA" draggable="false" />
+        </a>
+
+        <div class="head-right">
+          <span class="field field--wide"></span>
+          <button class="icon-btn" aria-label="search">
+            <span class="micro">search</span>
+            <span class="dot-icon">&#9906;</span>
+          </button>
+          <button class="icon-btn icon-btn--pill" aria-label="account">
+            <span class="dot-account">&#9711;</span>
+            <span class="micro">sign in</span>
+          </button>
+        </div>
+      </header>
+
+      <!--
+        LAYER 4.5: Editorial caption in the LOWER-RIGHT quadrant — the
+        open off-white area under the video and right of the cream
+        block. Mirrors a printed catalogue plate: a hairline rule, a
+        small numeric index (№ 01 · Spring Ledger), a two-line serif
+        caption, and a quiet volume / year stamp. Fills the empty
+        panel so the composition reads as a complete spread.
+      -->
+      <aside class="caption" aria-label="edition">
+        <div class="caption-rule"></div>
+        <span class="caption-kicker">
+          <span class="caption-num">№ 01</span>
+          <span class="caption-sep">&middot;</span>
+          <span class="caption-label">Spring Ledger</span>
+        </span>
+        <p class="caption-body">
+          A slow index of seasonal houses &mdash;
+          <em>kept by hand, read at quiet distance.</em>
+        </p>
+        <span class="caption-meta">
+          <span>vol. i</span>
+          <span class="caption-sep">&middot;</span>
+          <span>mmxxvi</span>
+        </span>
+      </aside>
+
+      <!--
+        LAYER 5: Center media window (the landscape video). Positioned
+        per reference anchors (x 28.66% / y 29.06% / w 35.11% / h 35.95%).
+        The cream foreground block of the base plate sits visually in
+        FRONT of this frame on its left edge, which is exactly what the
+        reference shows — we recreate that overlap with a clip-path on
+        this element so the block's right edge covers the video's lower-left.
+      -->
+      <figure class="media-frame" aria-label="featured film">
+        <video
+          class="media-video"
+          src="assets/media/seedance.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          preload="auto"
+          disableRemotePlayback
+        ></video>
+      </figure>
+
+      <!-- LAYER 6: Right-side editorial text column. -->
+      <aside class="editorial" aria-label="introduction">
+        <p class="lede">
+          Discover, at a quiet distance, a new book of luxurious seasonal
+          stays &mdash; a ledger kept by curators we trust; a thin, airy
+          archive for readers, a trusted index of trusted curators.
+        </p>
+        <p class="cta"><a href="#">Enter</a></p>
+
+        <ul class="tags" role="list">
+          <li><span class="bullet"></span>all archives</li>
+          <li><span class="bullet"></span>book now</li>
+          <li><span class="bullet"></span>provenance</li>
+          <li><span class="bullet"></span>press</li>
+          <li><span class="bullet"></span>ledger</li>
+          <li><span class="bullet"></span>categories</li>
+        </ul>
+      </aside>
+
+      <!-- LAYER 7: Bottom micro-footer / navigation hairline row. -->
+      <footer class="microfoot" aria-label="footer">
+        <div class="rule rule--foot"></div>
+        <nav class="microfoot-nav">
+          <span>Discover</span>
+          <span>Curators</span>
+          <span>Editions</span>
+          <span>Provenance</span>
+          <span>Press</span>
+          <span>Journal</span>
+        </nav>
+        <nav class="microfoot-meta">
+          <span>concept</span>
+          <span>book now</span>
+          <span>en</span>
+          <span>info</span>
+        </nav>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SECTION 2 — Hotel search engine
+       A quiet, editorial search module that breaks from the
+       hero. Uses a hairline grid with destination, dates and
+       guests, and a single small CTA on the right — no heavy
+       form chrome, matches the restrained print feel.
+       ===================================================== -->
+  <section class="section section--search reveal" aria-labelledby="search-title">
+    <div class="section-inner">
+      <header class="section-head">
+        <span class="eyebrow"><span class="dot"></span>I. Search</span>
+        <h2 id="search-title" class="section-title">Find your stay.</h2>
+        <p class="section-note">
+          A curated index of seasonal houses, retreats and ledger-listed
+          hotels. Begin with a place and a pair of dates.
+        </p>
+      </header>
+
+      <form class="search-bar" role="search" aria-label="hotel search">
+        <div class="search-cell">
+          <label for="sb-destination" class="search-label">Destination</label>
+          <input
+            id="sb-destination"
+            class="search-input"
+            type="text"
+            placeholder="Where to &mdash; a town, a coast, a country"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="search-cell">
+          <label for="sb-arrive" class="search-label">Arrive</label>
+          <input id="sb-arrive" class="search-input" type="date" />
+        </div>
+
+        <div class="search-cell">
+          <label for="sb-depart" class="search-label">Depart</label>
+          <input id="sb-depart" class="search-input" type="date" />
+        </div>
+
+        <div class="search-cell">
+          <label for="sb-guests" class="search-label">Guests</label>
+          <select id="sb-guests" class="search-input">
+            <option>1 guest</option>
+            <option selected>2 guests</option>
+            <option>3 guests</option>
+            <option>4 guests</option>
+            <option>5+ guests</option>
+          </select>
+        </div>
+
+        <button type="submit" class="search-submit">
+          Search
+          <span class="arrow" aria-hidden="true">&rarr;</span>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SECTION 3 — Hotels by category
+       A horizontal editorial gallery. Each card is a
+       category (not a single hotel) so the page reads like a
+       ledger of collections. Cards share one hairline baseline.
+       ===================================================== -->
+  <section class="section section--categories reveal" aria-labelledby="cats-title">
+    <div class="section-inner">
+      <header class="section-head section-head--inline">
+        <span class="eyebrow"><span class="dot"></span>II. Categories</span>
+        <h2 id="cats-title" class="section-title">Hotels by category.</h2>
+        <a href="#" class="section-link">See all &rarr;</a>
+      </header>
+
+      <div class="cats-grid">
+        <!--
+          Each card uses a CSS gradient as a placeholder "plate".
+          When real imagery is provided, swap the
+          --plate CSS var for a background-image url.
+        -->
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#c6b9a1,#8f806a);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">01</span>
+            <h3 class="cat-name">Seaside</h3>
+            <p class="cat-count">28 houses &mdash; spring editions</p>
+          </div>
+        </a>
+
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#b7a98f,#6e6351);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">02</span>
+            <h3 class="cat-name">Mountain</h3>
+            <p class="cat-count">17 retreats &mdash; year-round</p>
+          </div>
+        </a>
+
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#d6c9b0,#a59479);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">03</span>
+            <h3 class="cat-name">Desert</h3>
+            <p class="cat-count">9 houses &mdash; autumn &amp; winter</p>
+          </div>
+        </a>
+
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#b0a68c,#5e5a47);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">04</span>
+            <h3 class="cat-name">Countryside</h3>
+            <p class="cat-count">23 stays &mdash; all seasons</p>
+          </div>
+        </a>
+
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#c8bba3,#837658);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">05</span>
+            <h3 class="cat-name">City</h3>
+            <p class="cat-count">14 townhouses &mdash; editorial picks</p>
+          </div>
+        </a>
+
+        <a class="cat-card" href="#" style="--plate: linear-gradient(155deg,#b8a890,#574d3b);">
+          <div class="cat-plate" aria-hidden="true"></div>
+          <div class="cat-meta">
+            <span class="cat-num">06</span>
+            <h3 class="cat-name">Island</h3>
+            <p class="cat-count">11 retreats &mdash; summer editions</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       SECTION 4 — The World of NYA
+       An editorial feature block that frames the brand
+       itself: what the ledger is, who keeps it, a short
+       journal, and a press / provenance callout.
+       ===================================================== -->
+  <section class="section section--world reveal" aria-labelledby="world-title">
+    <div class="section-inner">
+      <header class="section-head section-head--split">
+        <div>
+          <span class="eyebrow"><span class="dot"></span>III. The World</span>
+          <h2 id="world-title" class="section-title">The world of NYA.</h2>
+        </div>
+        <p class="section-note section-note--wide">
+          NYA is a ledger kept by curators we trust &mdash; a thin, airy
+          archive of seasonal houses, the people who keep them, and the
+          quiet journals we write between stays.
+        </p>
+      </header>
+
+      <div class="world-grid">
+        <!-- Large editorial tile -->
+        <a class="world-tile world-tile--lead" href="#">
+          <div class="world-plate world-plate--lead" aria-hidden="true"></div>
+          <div class="world-label">
+            <span class="tile-kicker">Editorial</span>
+            <h3 class="tile-title">The index of trusted curators.</h3>
+            <p class="tile-note">A long read on how the ledger is kept.</p>
+          </div>
+        </a>
+
+        <!-- Two stacked secondary tiles -->
+        <a class="world-tile" href="#">
+          <div class="world-plate world-plate--a" aria-hidden="true"></div>
+          <div class="world-label">
+            <span class="tile-kicker">Journal</span>
+            <h3 class="tile-title">Seasonal dispatches from the houses we love.</h3>
+          </div>
+        </a>
+
+        <a class="world-tile" href="#">
+          <div class="world-plate world-plate--b" aria-hidden="true"></div>
+          <div class="world-label">
+            <span class="tile-kicker">Provenance</span>
+            <h3 class="tile-title">How a house is added to the ledger.</h3>
+          </div>
+        </a>
+
+        <!-- Press / newsletter callout spanning width -->
+        <div class="world-tile world-tile--callout">
+          <div class="callout-inner">
+            <span class="tile-kicker">Newsletter</span>
+            <h3 class="tile-title callout-title">A quiet letter, monthly.</h3>
+            <form class="newsletter" aria-label="newsletter signup">
+              <input type="email" class="newsletter-input" placeholder="Your email" aria-label="email" />
+              <button type="submit" class="newsletter-btn">Subscribe &rarr;</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       Page footer — lives below The World section. Keeps
+       the same hairline / tiny-type feel as the hero's
+       micro-footer so the whole page reads as one piece.
+       ===================================================== -->
+  <footer class="page-foot">
+    <div class="section-inner">
+      <div class="rule rule--foot"></div>
+      <div class="page-foot-row">
+        <span class="page-foot-brand">NYA &mdash; a ledger of trusted curators.</span>
+        <nav class="page-foot-nav">
+          <a href="#">Concept</a>
+          <a href="#">Press</a>
+          <a href="#">Provenance</a>
+          <a href="#">Terms</a>
+          <a href="#">Privacy</a>
+          <a href="#">EN</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
