@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!--
+    Base href so all relative asset paths (styles.css, assets/...) resolve
+    against /site-design/ regardless of whether the URL is visited with or
+    without a trailing slash. Same fix pattern used for /web-design.
+  -->
+  <base href="/site-design/" />
   <title>NYA</title>
   <meta name="description" content="NYA — a quiet editorial index of trusted curators." />
   <link rel="preload" as="image" href="assets/img/background.png" />
