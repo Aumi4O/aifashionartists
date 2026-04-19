@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         source: '/site-design',
         destination: '/site-design/index.html',
       },
+      {
+        source: '/site-nya',
+        destination: '/site-nya/index.html',
+      },
     ];
   },
   eslint: {
