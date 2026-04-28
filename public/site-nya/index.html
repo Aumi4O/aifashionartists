@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A world of peace. A world inspired." />
+    <!--
+      Base href so all relative asset paths (styles.css, script.js, assets/...)
+      resolve against /site-nya/ regardless of trailing slash. Same fix pattern
+      used for /web-design and /site-design.
+    -->
+    <base href="/site-nya/" />
+    <meta name="description" content="Considered design. Quiet retreats. Refined hospitality." />
     <title>VIO</title>
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f1ea'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='300' letter-spacing='4' fill='%231f1d1a'%3EVIO%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -162,7 +168,7 @@
         <section class="featured">
             <div class="featured-heading">
                 <span class="eyebrow">Wellness</span>
-                <h2>Mobility &amp; Recovery: A Novak Djokovic Programme</h2>
+                <h2>Stillness &amp; Motion: A Considered Wellness Practice</h2>
                 <a href="#" class="link-underline">Discover more</a>
             </div>
 
@@ -178,7 +184,7 @@
                     <div class="feature-text">
                         <span class="eyebrow">Hotels &amp; Resorts</span>
                         <h3>Explore the World of VIO</h3>
-                        <p>Uncover new horizons with VIO. From soul-soothing escapes by the coast to transformational journeys that awaken the spirit — across 35 hotels and resorts in 20 countries.</p>
+                        <p>A small collection of considered retreats — coastal, alpine, urban. Each shaped by the rhythm of its place.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </div>
                 </article>
@@ -285,7 +291,7 @@
             <div class="seasonal-inner">
                 <div class="seasonal-intro">
                     <h2>Seasonal Experiences</h2>
-                    <p>Across the VIO world, discover new and noteworthy experiences that provide an innate connection to the soul of a place.</p>
+                    <p>Slow seasonal practices, drawn from the texture of each place we settle.</p>
                 </div>
 
                 <div class="seasonal-track" id="seasonalTrack">
@@ -299,7 +305,7 @@
                         </div>
                         <span class="eyebrow">Wellness</span>
                         <h3>VIO Villas</h3>
-                        <p>Private Villas set within the ultimate essence of the VIO experience.</p>
+                        <p>Private villas held within stone walls and slow gardens — designed for long, unhurried stays.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </article>
 
@@ -327,7 +333,7 @@
                         </div>
                         <span class="eyebrow">By the Sea</span>
                         <h3>To the Wilds</h3>
-                        <p>Reconnect with the wild, where the natural world awaits, awakens and renews.</p>
+                        <p>Wide horizons, quiet light, and the slow company of the sea.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </article>
                 </div>
@@ -397,8 +403,8 @@
         <!-- ============ NEWSLETTER / CTA ============ -->
         <section class="newsletter">
             <div class="newsletter-inner">
-                <h2>A world of peace. A world inspired.</h2>
-                <p>Sign up to be the first to know about new openings, experiences and exclusive offers from VIO.</p>
+                <h2>Letters from the world of VIO.</h2>
+                <p>Sign up for occasional notes — new openings, slow experiences, quiet news.</p>
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Email address" aria-label="Email address" />
                     <button type="submit">Subscribe</button>
@@ -412,7 +418,7 @@
         <div class="footer-inner">
             <div class="footer-brand">
                 <span class="brand-logo brand-logo--footer">VIO</span>
-                <p class="footer-tag">A world of peace. A world inspired.</p>
+                <p class="footer-tag">Quiet hospitality. Considered design.</p>
             </div>
 
             <div class="footer-cols">
