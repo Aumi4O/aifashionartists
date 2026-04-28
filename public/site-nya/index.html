@@ -3,15 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--
-      Base href so all relative asset paths (styles.css, script.js, assets/...)
-      resolve against /site-nya/ regardless of trailing slash. Same fix pattern
-      used for /web-design and /site-design.
-    -->
-    <base href="/site-nya/" />
     <meta name="description" content="A world of peace. A world inspired." />
-    <title>NYA</title>
-    <link rel="icon" type="image/png" href="assets/images/logo-nya.png" />
+    <title>VIO</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f1ea'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='300' letter-spacing='4' fill='%231f1d1a'%3EVIO%3C/text%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -40,8 +34,8 @@
                 </button>
             </div>
 
-            <a href="#" class="brand" aria-label="NYA home">
-                <img src="assets/images/logo-nya.png" alt="NYA" class="brand-logo" />
+            <a href="#" class="brand" aria-label="VIO home">
+                <span class="brand-logo">VIO</span>
             </a>
 
             <div class="header-right">
@@ -60,7 +54,7 @@
                     <ul>
                         <li><a href="#">Hotels &amp; Resorts</a></li>
                         <li><a href="#">Residences</a></li>
-                        <li><a href="#">Aman Villas</a></li>
+                        <li><a href="#">VIO Villas</a></li>
                         <li><a href="#">Private Jet</a></li>
                         <li><a href="#">Yachting</a></li>
                     </ul>
@@ -76,7 +70,7 @@
                     </ul>
                 </div>
                 <div class="menu-col">
-                    <h3>Aman World</h3>
+                    <h3>VIO World</h3>
                     <ul>
                         <li><a href="#">Stories</a></li>
                         <li><a href="#">Gift Cards</a></li>
@@ -122,13 +116,13 @@
                     <label for="r-destination" class="eyebrow">Destination</label>
                     <select id="r-destination" name="destination">
                         <option value="">Select a destination</option>
-                        <option>Amangiri, Utah</option>
-                        <option>Amankora, Bhutan</option>
-                        <option>Amanpuri, Phuket</option>
-                        <option>Amanyara, Turks &amp; Caicos</option>
-                        <option>Aman Tokyo, Japan</option>
-                        <option>Aman Venice, Italy</option>
-                        <option>Aman New York, USA</option>
+                        <option>Vio Utah</option>
+                        <option>Vio Bhutan</option>
+                        <option>Vio Phuket</option>
+                        <option>Vio Turks &amp; Caicos</option>
+                        <option>Vio Tokyo, Japan</option>
+                        <option>Vio Venice, Italy</option>
+                        <option>Vio New York, USA</option>
                     </select>
                 </div>
 
@@ -177,30 +171,25 @@
                     <div class="feature-media">
                         <img
                             src="assets/images/featured-landscape.png"
-                            alt="Aerial view of the beach with parasols and turquoise water"
+                            alt="Reflective infinity pool at dusk, minimal architecture surrounded by bare trees and a quiet city skyline"
                             loading="lazy"
                         />
                     </div>
                     <div class="feature-text">
                         <span class="eyebrow">Hotels &amp; Resorts</span>
-                        <h3>Explore the World of Aman</h3>
-                        <p>Uncover new horizons with Aman. From soul-soothing escapes by the coast to transformational journeys that awaken the spirit — across 35 hotels and resorts in 20 countries.</p>
+                        <h3>Explore the World of VIO</h3>
+                        <p>Uncover new horizons with VIO. From soul-soothing escapes by the coast to transformational journeys that awaken the spirit — across 35 hotels and resorts in 20 countries.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </div>
                 </article>
 
                 <article class="feature-card feature-card--tall">
                     <div class="feature-media feature-media--tall">
-                        <video
-                            class="feature-video"
-                            autoplay
-                            muted
-                            loop
-                            playsinline
-                            preload="metadata"
-                        >
-                            <source src="assets/videos/dolphins.mp4" type="video/mp4" />
-                        </video>
+                        <img
+                            src="assets/images/featured-tall.png"
+                            alt="Dark timber onsen with a sakura branch in soft light"
+                            loading="lazy"
+                        />
                     </div>
                     <div class="feature-text">
                         <span class="eyebrow">New &amp; Noteworthy</span>
@@ -212,14 +201,13 @@
             </div>
         </section>
 
-        <!-- ============ CATEGORY SEARCH (hidden on live until all 8 photos are ready) ============ -->
-        <!--
-        <section class="categories" aria-label="Search hotels by category">
+        <!-- ============ CATEGORY SEARCH (hidden — restore by removing `hidden` attribute) ============ -->
+        <section class="categories" aria-label="Search hotels by category" hidden>
             <div class="categories-inner">
                 <div class="categories-intro">
                     <span class="eyebrow">Find Your Hotel</span>
                     <h2>Search by Category</h2>
-                    <p>Discover the NYA portfolio by the setting you're drawn to, or by the way you wish to spend your time.</p>
+                    <p>Discover the VIO portfolio by the setting you're drawn to, or by the way you wish to spend your time.</p>
                 </div>
 
                 <div class="cat-group">
@@ -291,28 +279,27 @@
                 </div>
             </div>
         </section>
-        -->
 
         <!-- ============ SEASONAL EXPERIENCES ============ -->
         <section class="seasonal">
             <div class="seasonal-inner">
                 <div class="seasonal-intro">
                     <h2>Seasonal Experiences</h2>
-                    <p>Across the Aman world, discover new and noteworthy experiences that provide an innate connection to the soul of a place.</p>
+                    <p>Across the VIO world, discover new and noteworthy experiences that provide an innate connection to the soul of a place.</p>
                 </div>
 
                 <div class="seasonal-track" id="seasonalTrack">
                     <article class="season-card">
                         <div class="season-media">
                             <img
-                                src="assets/images/seasonal-1-wellness.png"
-                                alt="Wellness — water cascade ritual"
+                                src="assets/images/seasonal-3-sea.png"
+                                alt="Cliffside terrace with a cream parasol overlooking a hazy Mediterranean coastline"
                                 loading="lazy"
                             />
                         </div>
                         <span class="eyebrow">Wellness</span>
-                        <h3>Aman Villas</h3>
-                        <p>Private Villas set within the ultimate essence of the Aman experience.</p>
+                        <h3>VIO Villas</h3>
+                        <p>Private Villas set within the ultimate essence of the VIO experience.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </article>
 
@@ -320,7 +307,7 @@
                         <div class="season-media">
                             <img
                                 src="assets/images/seasonal-2-mountains.png"
-                                alt="Alpine valley between green mountains"
+                                alt="Misty alpine lake with a dark timber boathouse against pine-covered slopes"
                                 loading="lazy"
                             />
                         </div>
@@ -333,8 +320,8 @@
                     <article class="season-card">
                         <div class="season-media">
                             <img
-                                src="assets/images/seasonal-3-sea.png"
-                                alt="Golden sea at sunset"
+                                src="assets/images/seasonal-1-wellness.png"
+                                alt="Quiet stone courtyard with bare trees and a still reflecting pool, a doorway opening to the sea"
                                 loading="lazy"
                             />
                         </div>
@@ -352,23 +339,23 @@
             <span></span>
         </div>
 
-        <!-- ============ THE WORLD OF NYA ============ -->
+        <!-- ============ THE WORLD OF VIO ============ -->
         <section class="world">
-            <h2 class="world-title">The World of NYA</h2>
+            <h2 class="world-title">The World of VIO</h2>
 
             <div class="world-grid">
                 <article class="world-card">
                     <div class="world-media">
                         <img
                             src="assets/images/world-1-men.png"
-                            alt="A guest moves through the dark-timbered hallway"
+                            alt="A dark-toned lounge of low sofas and lantern light, opening onto a hushed city skyline"
                             loading="lazy"
                         />
                     </div>
                     <div class="world-text">
                         <span class="eyebrow">Stay</span>
                         <h3>Quiet Arrivals</h3>
-                        <p>Slow corridors, lantern light and the soft rhythm of arrival — the first moments at NYA.</p>
+                        <p>Slow corridors, lantern light and the soft rhythm of arrival — the first moments at VIO.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </div>
                 </article>
@@ -377,14 +364,14 @@
                     <div class="world-media">
                         <img
                             src="assets/images/world-2-pool.png"
-                            alt="Aerial view of the pool framed by palms and pavilions"
+                            alt="A single cherry blossom branch in bloom held above still water"
                             loading="lazy"
                         />
                     </div>
                     <div class="world-text">
-                        <span class="eyebrow">Pool</span>
-                        <h3>Above the Canopy</h3>
-                        <p>A long stone pool tucked between pavilions and palms — quiet water beneath an open sky.</p>
+                        <span class="eyebrow">Bloom</span>
+                        <h3>First Blossoms</h3>
+                        <p>A single branch in bloom held above still water — the slow turning of the season.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </div>
                 </article>
@@ -393,14 +380,14 @@
                     <div class="world-media">
                         <img
                             src="assets/images/world-3-salon.png"
-                            alt="A high-ceilinged salon with arched windows opening onto green canopy"
+                            alt="A long mirror pool reflecting modern towers under a pale, hazy sky"
                             loading="lazy"
                         />
                     </div>
                     <div class="world-text">
-                        <span class="eyebrow">Spaces</span>
-                        <h3>The Salon</h3>
-                        <p>An open-air sitting room of dark timber, archways and treetop views — somewhere to settle in.</p>
+                        <span class="eyebrow">Pool</span>
+                        <h3>Mirror Pool</h3>
+                        <p>Glass-still water set against a hushed skyline — solitude in the heart of the city.</p>
                         <a href="#" class="link-underline">Discover more</a>
                     </div>
                 </article>
@@ -411,7 +398,7 @@
         <section class="newsletter">
             <div class="newsletter-inner">
                 <h2>A world of peace. A world inspired.</h2>
-                <p>Sign up to be the first to know about new openings, experiences and exclusive offers from Aman.</p>
+                <p>Sign up to be the first to know about new openings, experiences and exclusive offers from VIO.</p>
                 <form class="newsletter-form" onsubmit="event.preventDefault();">
                     <input type="email" placeholder="Email address" aria-label="Email address" />
                     <button type="submit">Subscribe</button>
@@ -424,7 +411,7 @@
     <footer class="site-footer">
         <div class="footer-inner">
             <div class="footer-brand">
-                <img src="assets/images/logo-nya.png" alt="NYA" class="brand-logo brand-logo--footer" />
+                <span class="brand-logo brand-logo--footer">VIO</span>
                 <p class="footer-tag">A world of peace. A world inspired.</p>
             </div>
 
@@ -434,7 +421,7 @@
                     <ul>
                         <li><a href="#">Hotels &amp; Resorts</a></li>
                         <li><a href="#">Residences</a></li>
-                        <li><a href="#">Aman Villas</a></li>
+                        <li><a href="#">VIO Villas</a></li>
                         <li><a href="#">Private Jet</a></li>
                     </ul>
                 </div>
@@ -448,7 +435,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Aman World</h4>
+                    <h4>VIO World</h4>
                     <ul>
                         <li><a href="#">Stories</a></li>
                         <li><a href="#">Gift Cards</a></li>
@@ -470,7 +457,7 @@
 
         <div class="footer-bottom">
             <div class="footer-bottom-inner">
-                <span>&copy; <span id="year"></span> NYA. All rights reserved.</span>
+                <span>&copy; <span id="year"></span> VIO. All rights reserved.</span>
                 <div class="footer-legal">
                     <a href="#">Privacy</a>
                     <a href="#">Terms</a>

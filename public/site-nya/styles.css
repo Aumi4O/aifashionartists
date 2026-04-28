@@ -1,5 +1,5 @@
 /* =====================================================
-   AMAN — minimal, editorial, cream-toned layout
+   VIO — minimal, editorial, cream-toned layout
    ===================================================== */
 
 /* ---------- Reset ---------- */
@@ -221,16 +221,20 @@ p {
     align-items: center;
 }
 
-/* The NYA logo is an <img src="…logo-nya.png"> */
+/* VIO wordmark — text-based logo using Cormorant Garamond */
 .brand-logo {
-    display: block;
-    height: 64px;
-    width: auto;
-    object-fit: contain;
+    display: inline-block;
+    font-family: var(--serif);
+    font-weight: 300;
+    font-size: 1.75rem;
+    letter-spacing: 0.42em;
+    color: var(--ink);
+    line-height: 1;
+    padding-left: 0.21em;
 }
 
 .brand-logo--footer {
-    height: 72px;
+    font-size: 2.1rem;
 }
 
 .lang-btn {
@@ -549,7 +553,7 @@ p {
 }
 
 /* ===================================================== */
-/* WORLD OF AMAN                                          */
+/* WORLD OF VIO                                           */
 /* ===================================================== */
 .world {
     max-width: var(--max);
@@ -976,10 +980,10 @@ p {
         height: 76px;
     }
     .brand-logo {
-        height: 48px;
+        font-size: 1.35rem;
     }
     .brand-logo--footer {
-        height: 60px;
+        font-size: 1.7rem;
     }
 
     .reserve-bar {

@@ -152,6 +152,12 @@ export default function Home() {
           >
             Concept site
           </Link>
+          <Link
+            href="/site-nya/"
+            className="px-4 py-2 border border-neutral-300 hover:border-neutral-900 text-sm transition-colors"
+          >
+            Site
+          </Link>
         </div>
       </section>
 
